@@ -1,0 +1,20 @@
+plugins:
+
+  message:
+    name: redis
+    options:
+      host: redis
+      port: 6379
+
+  cache:
+    name: redis
+    options:
+      host: redis
+      port: 6379
+
+  storage:
+    name: rethinkdb
+    options:
+      host: rethinkdb
+      port: 28015
+      splitChar: /

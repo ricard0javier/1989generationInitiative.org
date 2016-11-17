@@ -1,0 +1,25 @@
+$fa-font-path: '../node_modules/font-awesome/fonts';
+@import '../node_modules/font-awesome/scss/font-awesome.scss';
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../node_modules/prismjs/themes/prism-dark.css';
+@import "style/bootstrap";
+@import "style/article";
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body, h1, h2, h3 {
+  font-weight: 300
+}
+
+a {
+  color: cyan;
+  text-decoration: none;
+
+  &:hover {
+    color: #5aadbb;
+  }
+}
