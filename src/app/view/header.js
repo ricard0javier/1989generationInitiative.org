@@ -1,41 +1,56 @@
 import React from "react";
 import NavLink from "./navLink";
 
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    height: '100px',
+    padding: '5px'
+  },
+  list: {
+    listStyle: 'none',
+    margin: '0',
+    display: 'flex',
+    flexDirection: 'row'
+  },
+  link: {
+    textDecoration: 'none',
+    display: 'block',
+    padding: '1em',
+    color: '#B19D64'
+  }
+};
+
 /**
 * Renders a Header div element which contains:
 * - App Logo
 * - Main Links
-* - Menu Button (TODO)
-* - Login/Logout Button (TODO)
+* - Social media Links
+* - TODO rescale the source image to the size decided in the html to prevent client computation
 */
 const Header = () => (
-  <div className="header">
-    <div className="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div className="container">
-        <div className="navbar-header">
-
-          <a href="#menu" className="navbar-toggle collapsed">
-            <span className="sr-only">Menu</span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-          </a>
-
-          <div className="navbar-brand">
-            <a className="menu-bars" href="#menu"><i className="fa fa-bars fa-1x" aria-hidden="true"></i></a>
-            <span>&nbsp;&nbsp;&nbsp;</span>
-            <span>The Codestein</span>
-          </div>
-        </div>
-
-        <div className="collapse navbar-collapse">
-          <ul className="nav navbar-nav">
-            <li><NavLink to="/articles" value="Articles"/></li>
-            <li><NavLink to="/about" value="About"/></li>
-            <li><NavLink to="/user" value="User"/></li>
-          </ul>
-        </div>
-      </div>
+  <div style={styles.container}>
+    <div>
+      <img src="images/logo_white_background.png" width="127px" height="80px"/>
+    </div>
+    <div>
+      <ul style={styles.list}>
+        <li><NavLink to="/home" value="Home"/></li>
+        <li><NavLink to="/updates" value="Updates"/></li>
+        <li><NavLink to="/collaborators" value="Collaborators"/></li>
+        <li><NavLink to="/who_we_are" value="Who We Are"/></li>
+        <li><NavLink to="/events" value="Events"/></li>
+      </ul>
+    </div>
+    <div>
+      <ul style={styles.list}>
+        <li><a style={styles.link} href="#"><i className="fa fa-envelope-o"/></a></li>
+        <li><a style={styles.link} href="#"><i className="fa fa-linkedin-square"/></a></li>
+        <li><a style={styles.link} href="#"><i className="fa fa-facebook-square"/></a></li>
+        <li><a style={styles.link} href="#"><i className="fa fa-twitter"/></a></li>
+      </ul>
     </div>
   </div>
 );

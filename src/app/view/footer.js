@@ -1,12 +1,10 @@
 import React from "react";
 
+import Header from './header';
+
 const styles = {
-  footer: {
-    padding: '0.5rem',
-    fontSize: '1rem',
-    backgroundColor: '#1f1f1f',
-    textAlign: 'center',
-    color: 'white'
+  container: {
+    background: '#02274A'
   }
 };
 
@@ -15,12 +13,9 @@ const styles = {
 * - The author name linking to the Linkedin profile
 */
 const Footer = () => (
-  <footer style={styles.footer}>
-    Built by &nbsp;
-    <a target="_blank" href="https://uk.linkedin.com/in/ricardo-villanueva-12b73426">
-      Ricardo Villanueva
-    </a>
-  </footer>
+  <div style={styles.container}>
+    <Header/>
+  </div>
 );
 
 export default Footer;
