@@ -6,7 +6,6 @@ Used links:
 
 TODO:
 -----
-* Define Social Media Links
 * Get better quality logos
 * Get the list of team members (Full name, brief description, picture)
 * EuroBabble blog is not available, what to put in Updates then?
@@ -19,3 +18,4 @@ TODO:
 * Clean up the scss files
 * Clean up npm dependencies
 * Clean up unused files
+* publish website into dev.1989generationInitiative
