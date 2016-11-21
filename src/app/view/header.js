@@ -21,6 +21,9 @@ const styles = {
     display: 'block',
     padding: '1em',
     color: '#B19D64'
+  },
+  leftMarginSize: {
+    width: '130px'
   }
 };
 
@@ -33,7 +36,7 @@ const styles = {
 */
 const Header = () => (
   <div style={styles.container}>
-    <div>
+    <div style={styles.leftMarginSize}>
       <img src="images/logo_1989_initiative.png" width="127px" height="80px"/>
     </div>
     <div>

@@ -5,8 +5,7 @@ import Header from './header';
 const styles = {
   container: {
     background: '#02274A',
-    paddingTop: '1em',
-    paddingBottom: '1em',
+    padding: '1em 0 1em 0',
     color: '#B19D64'
   },
   containerBottom: {

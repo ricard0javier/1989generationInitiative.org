@@ -4,11 +4,10 @@ import {Provider} from "react-redux";
 import {createStore, applyMiddleware} from "redux";
 import thunk from "redux-thunk";
 import newAuth0Lock, {handleLogin, registerLoggedInListener} from "./utils/auth-service";
+import HomeComponent from "./view/home";
 import About from "./view/about";
 import reducers from "./controller/reducer";
 import {handleLoggedIn} from "./controller/action/auth-actions";
-import {fetchArticles} from "./controller/action/articles-actions";
-import ArticlesContainer from "./controller/container/articles-container";
 import TilesContainer from "./controller/container/tiles-container";
 import UserInfoContainer from "./controller/container/user-info-container";
 
@@ -33,8 +32,6 @@ const onEnterPrivateRoute = (nextState, replace) => {
   }
 };
 
-const onEnterArticles = () => store.dispatch(fetchArticles());
-
 /**
 * Configures the application with:
 * - Redux (<Provider/>)
@@ -44,8 +41,8 @@ const Main = () => (
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={TilesContainer}>
-        <IndexRedirect to="/articles"/>
-        <Route path="articles" component={ArticlesContainer} onEnter={onEnterArticles}/>
+        <IndexRedirect to="/home"/>
+        <Route path="home" component={HomeComponent}/>
         <Route path="about" component={About} onEnter={onEnterPrivateRoute}/>
         <Route path="user" component={UserInfoContainer} handleLogin={handleLogin(auth0Lock)}/>
       </Route>

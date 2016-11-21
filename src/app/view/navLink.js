@@ -7,12 +7,11 @@ const styles = {
     display: 'block',
     padding: '1em',
     color: '#B19D64',
-    borderBottomStyle: 'solid',
-    borderBottomColor: '#B19D64',
+    borderBottom: 'solid #B19D64',
     margin: '1em'
   },
   active: {
-    color: 'cyan'
+    borderTop: 'solid #B19D64'
   }
 };
 
