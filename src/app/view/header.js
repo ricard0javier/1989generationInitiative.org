@@ -7,7 +7,8 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between',
     height: '100px',
-    padding: '5px'
+    padding: '5px',
+    borderBottom: 'solid 1px #B19D64'
   },
   list: {
     listStyle: 'none',
@@ -33,7 +34,7 @@ const styles = {
 const Header = () => (
   <div style={styles.container}>
     <div>
-      <img src="images/logo_white_background.png" width="127px" height="80px"/>
+      <img src="images/logo_1989_initiative.png" width="127px" height="80px"/>
     </div>
     <div>
       <ul style={styles.list}>
