@@ -16,6 +16,3 @@ TODO:
     * Define Who We Are body
     * Define Updates body
 * Clean up the scss files
-* Clean up npm dependencies
-* Clean up unused files
-* publish website into dev.1989generationInitiative

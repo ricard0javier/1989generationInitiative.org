@@ -42,7 +42,7 @@ const HomeComponent = () => (
       </div>
     </div>
     <div>
-      <img src="images/inspiring_image.png"/>
+      <img src="images/inspiring_image.png" width="100%"/>
     </div>
     <div style={styles.iconsContainer}>
       <div style={styles.iconBox}>
