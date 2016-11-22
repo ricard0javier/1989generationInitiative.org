@@ -1,5 +1,7 @@
 import React from "react";
 
+import SubHeader from './subHeader';
+
 const styles = {
   container: {
     padding: '1em 0 1em 0',
@@ -12,38 +14,17 @@ const styles = {
     justifyContent: 'space-between',
     padding: '4em'
   },
-  titleContainer: {
-    color: '#B19D64',
-    display: 'flex',
-    flexDirection: 'row',
-    padding: '2em'
-  },
   iconBox: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     textAlign: 'center'
-  },
-  leftGroup: {
-    textAlign: 'center',
-    width: '20%'
   }
 };
 
 const HomeComponent = () => (
   <div style={styles.container}>
-    <div style={styles.titleContainer}>
-      <div style={styles.leftGroup}>
-        <h1>HOME</h1>
-      </div>
-      <div>
-        <div>
-          <span>We are an open policy network committed to mobilising young Europeans;</span><br/>
-          <span>or '89ers', to lead the long term regeneration of the European Project</span><br/>
-          <span>through the development of innovative policy proposals.</span><br/>
-        </div>
-      </div>
-    </div>
+    <SubHeader pageName="HOME"/>
     <div>
       <img src="images/inspiring_image.png" width="100%"/>
     </div>
