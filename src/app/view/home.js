@@ -1,6 +1,6 @@
 import React from "react";
 
-import SubHeader from './subHeader';
+import SubHeaderComponent from './subHeader';
 
 const styles = {
   container: {
@@ -24,7 +24,7 @@ const styles = {
 
 const HomeComponent = () => (
   <div style={styles.container}>
-    <SubHeader pageName="HOME"/>
+    <SubHeaderComponent pageName="HOME"/>
     <div>
       <img src="images/inspiring_image.png" width="100%"/>
     </div>

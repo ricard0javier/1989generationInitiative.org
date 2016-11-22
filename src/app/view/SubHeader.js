@@ -5,7 +5,8 @@ const styles = {
     color: '#B19D64',
     display: 'flex',
     flexDirection: 'row',
-    padding: '2em'
+    padding: '2em',
+    borderBottom: 'solid 1px #B19D64'
   },
   leftGroup: {
     textAlign: 'center',
@@ -13,10 +14,10 @@ const styles = {
   }
 };
 
-const SubHeader = ({pageName}) => (
+const SubHeaderComponent = ({pageName}) => (
   <div style={styles.titleContainer}>
     <div style={styles.leftGroup}>
-      <h1>{pageName}</h1>
+      <h3>{pageName}</h3>
     </div>
     <div>
       <div>
@@ -28,8 +29,8 @@ const SubHeader = ({pageName}) => (
   </div>
 );
 
-SubHeader.propTypes = {
+SubHeaderComponent.propTypes = {
   pageName: PropTypes.string.isRequired
 };
 
-export default SubHeader;
+export default SubHeaderComponent;

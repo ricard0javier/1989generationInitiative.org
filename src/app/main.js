@@ -3,6 +3,7 @@ import {Router, Route, browserHistory, IndexRedirect} from "react-router";
 import {Provider} from "react-redux";
 import {createStore} from "redux";
 import HomeComponent from "./view/home";
+import CollaboratorsComponent from "./view/collaborators";
 import About from "./view/about";
 import reducers from "./controller/reducer";
 import TilesContainer from "./controller/container/tiles-container";
@@ -20,6 +21,7 @@ const Main = () => (
       <Route path="/" component={TilesContainer}>
         <IndexRedirect to="/home"/>
         <Route path="home" component={HomeComponent}/>
+        <Route path="collaborators" component={CollaboratorsComponent}/>
         <Route path="about" component={About}/>
       </Route>
     </Router>
