@@ -7,8 +7,7 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between',
     height: '100px',
-    padding: '5px',
-    borderBottom: 'solid 1px #B19D64'
+    padding: '5px'
   },
   list: {
     listStyle: 'none',
@@ -22,8 +21,16 @@ const styles = {
     padding: '1em',
     color: '#B19D64'
   },
-  leftMarginSize: {
-    width: '130px'
+  leftGroup: {
+    textAlign: 'center',
+    width: '20%'
+  },
+  rightGroup: {
+    width: '80%',
+    display: 'flex',
+    flexDirection: 'row',
+    borderBottom: 'solid 1px #B19D64',
+    justifyContent: 'space-between'
   }
 };
 
@@ -36,25 +43,27 @@ const styles = {
 */
 const Header = () => (
   <div style={styles.container}>
-    <div style={styles.leftMarginSize}>
+    <div style={styles.leftGroup}>
       <img src="images/logo_1989_initiative.png" width="127px" height="80px"/>
     </div>
-    <div>
-      <ul style={styles.list}>
-        <li><NavLink to="/home" value="Home"/></li>
-        <li><NavLink to="/updates" value="Updates"/></li>
-        <li><NavLink to="/collaborators" value="Collaborators"/></li>
-        <li><NavLink to="/who_we_are" value="Who We Are"/></li>
-        <li><NavLink to="/events" value="Events"/></li>
-      </ul>
-    </div>
-    <div>
-      <ul style={styles.list}>
-        <li><a style={styles.link} href="mailto:social@1989generationinitiative.org"><i className="fa fa-envelope-o"/></a></li>
-        <li><a style={styles.link} href="https://www.linkedin.com/company/9387318"><i className="fa fa-linkedin-square"/></a></li>
-        <li><a style={styles.link} href="https://www.facebook.com/1989generationinitiative"><i className="fa fa-facebook-square"/></a></li>
-        <li><a style={styles.link} href="https://twitter.com/1989_Generation"><i className="fa fa-twitter"/></a></li>
-      </ul>
+    <div style={styles.rightGroup}>
+      <div>
+        <ul style={styles.list}>
+          <li><NavLink to="/home" value="Home"/></li>
+          <li><NavLink to="/updates" value="Updates"/></li>
+          <li><NavLink to="/collaborators" value="Collaborators"/></li>
+          <li><NavLink to="/who_we_are" value="Who We Are"/></li>
+          <li><NavLink to="/events" value="Events"/></li>
+        </ul>
+      </div>
+      <div>
+        <ul style={styles.list}>
+          <li><a style={styles.link} href="mailto:social@1989generationinitiative.org"><i className="fa fa-envelope-o"/></a></li>
+          <li><a style={styles.link} href="https://www.linkedin.com/company/9387318"><i className="fa fa-linkedin-square"/></a></li>
+          <li><a style={styles.link} href="https://www.facebook.com/1989generationinitiative"><i className="fa fa-facebook-square"/></a></li>
+          <li><a style={styles.link} href="https://twitter.com/1989_Generation"><i className="fa fa-twitter"/></a></li>
+        </ul>
+      </div>
     </div>
   </div>
 );

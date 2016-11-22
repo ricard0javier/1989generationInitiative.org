@@ -8,7 +8,8 @@ const styles = {
     padding: '1em',
     color: '#B19D64',
     borderBottom: '1px solid #B19D64',
-    margin: '1em'
+    margin: '1em',
+    whiteSpace: 'nowrap'
   },
   active: {
     borderTop: '1px solid #B19D64'

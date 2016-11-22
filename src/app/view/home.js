@@ -24,21 +24,24 @@ const styles = {
     justifyContent: 'space-between',
     textAlign: 'center'
   },
-  leftMarginSize: {
-    width: '130px'
+  leftGroup: {
+    textAlign: 'center',
+    width: '20%'
   }
 };
 
 const HomeComponent = () => (
   <div style={styles.container}>
     <div style={styles.titleContainer}>
-      <div style={styles.leftMarginSize}>
+      <div style={styles.leftGroup}>
         <h1>HOME</h1>
       </div>
       <div>
-        <span>We are an open policy network committed to mobilising young Europeans;</span><br/>
-        <span>or '89ers', to lead the long term regeneration of the European Project</span><br/>
-        <span>through the development of innovative policy proposals.</span><br/>
+        <div>
+          <span>We are an open policy network committed to mobilising young Europeans;</span><br/>
+          <span>or '89ers', to lead the long term regeneration of the European Project</span><br/>
+          <span>through the development of innovative policy proposals.</span><br/>
+        </div>
       </div>
     </div>
     <div>
