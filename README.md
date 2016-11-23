@@ -11,8 +11,8 @@ TODO:
 * EuroBabble blog is not available, what to put in Updates then?
 * Get the events brochures
 * Define the different bodies:
-    * Define Collaborators body
-    * Define Events body
     * Define Who We Are body
     * Define Updates body
 * Clean up the scss files
+* find a better fonts family
+ * resize images to similar sizes

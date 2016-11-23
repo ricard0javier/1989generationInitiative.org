@@ -4,7 +4,7 @@ import {Provider} from "react-redux";
 import {createStore} from "redux";
 import HomeComponent from "./view/home";
 import CollaboratorsComponent from "./view/collaborators";
-import About from "./view/about";
+import EventsComponent from "./view/events";
 import reducers from "./controller/reducer";
 import TilesContainer from "./controller/container/tiles-container";
 
@@ -22,7 +22,7 @@ const Main = () => (
         <IndexRedirect to="/home"/>
         <Route path="home" component={HomeComponent}/>
         <Route path="collaborators" component={CollaboratorsComponent}/>
-        <Route path="about" component={About}/>
+        <Route path="events" component={EventsComponent}/>
       </Route>
     </Router>
   </Provider>
