@@ -6,6 +6,7 @@ import HomeComponent from "./view/home";
 import CollaboratorsComponent from "./view/collaborators";
 import EventsComponent from "./view/events";
 import WhoWeAreComponent from "./view/who_we_are";
+import UpdatesComponent from "./view/updates";
 import reducers from "./controller/reducer";
 import TilesContainer from "./controller/container/tiles-container";
 
@@ -25,6 +26,7 @@ const Main = () => (
         <Route path="collaborators" component={CollaboratorsComponent}/>
         <Route path="events" component={EventsComponent}/>
         <Route path="who_we_are" component={WhoWeAreComponent}/>
+        <Route path="updates" component={UpdatesComponent}/>
       </Route>
     </Router>
   </Provider>
