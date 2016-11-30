@@ -58,7 +58,7 @@ const EventsComponent = () => (
         <div key={index}>
           <div style={styles.eventBoxFunc(event.landscape)}>
             <div>
-              <a style={styles.downloadLink} href="#"><i className="fa fa-cloud-download"/></a>
+              <a style={styles.downloadLink} target="_blank" href="#"><i className="fa fa-cloud-download"/></a>
             </div>
             <div style={styles.eventBoxText}>
               <h2>{event.title}</h2>

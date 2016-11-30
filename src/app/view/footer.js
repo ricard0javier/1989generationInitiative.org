@@ -45,10 +45,10 @@ const Footer = () => (
   <div>
     <div style={styles.goldBar}>
       <ul style={styles.list}>
-        <li><a style={styles.link} href="#"><i className="fa fa-commenting-o fa-1x"/></a></li>
-        <li><a style={styles.link} href="#"><i className="fa fa-cloud-download fa-1x"/></a></li>
-        <li><a style={styles.link} href="#"><i className="fa fa-server fa-1x"/></a></li>
-        <li><a style={styles.link} href="#"><i className="fa fa-search fa-1x"/></a></li>
+        <li><a style={styles.link} target="_blank" href="#"><i className="fa fa-commenting-o fa-1x"/></a></li>
+        <li><a style={styles.link} target="_blank" href="#"><i className="fa fa-cloud-download fa-1x"/></a></li>
+        <li><a style={styles.link} target="_blank" href="#"><i className="fa fa-server fa-1x"/></a></li>
+        <li><a style={styles.link} target="_blank" href="#"><i className="fa fa-search fa-1x"/></a></li>
       </ul>
     </div>
     <div style={styles.container}>

@@ -58,10 +58,11 @@ const Header = () => (
       </div>
       <div>
         <ul style={styles.list}>
-          <li><a style={styles.link} href="mailto:social@1989generationinitiative.org"><i className="fa fa-envelope-o"/></a></li>
-          <li><a style={styles.link} href="https://www.linkedin.com/company/9387318"><i className="fa fa-linkedin-square"/></a></li>
-          <li><a style={styles.link} href="https://www.facebook.com/1989generationinitiative"><i className="fa fa-facebook-square"/></a></li>
-          <li><a style={styles.link} href="https://twitter.com/1989_Generation"><i className="fa fa-twitter"/></a></li>
+          <li><a style={styles.link} target="_blank" href="mailto:social@1989generationinitiative.org"><i className="fa fa-envelope-o"/></a></li>
+          <li><a style={styles.link} target="_blank" href="https://www.linkedin.com/company/9387318"><i className="fa fa-linkedin-square"/></a></li>
+          <li><a style={styles.link} target="_blank" href="https://www.facebook.com/1989generationinitiative"><i className="fa fa-facebook-square"/></a></li>
+          <li><a style={styles.link} target="_blank" href="https://twitter.com/1989_Generation"><i className="fa fa-twitter"/></a></li>
+          <li><a style={styles.link} target="_blank" href="docs/manifesto.pdf">Our Manifesto</a></li>
         </ul>
       </div>
     </div>
