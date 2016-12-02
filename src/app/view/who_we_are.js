@@ -45,34 +45,16 @@ const teamContainers = [
     name: "Core Committee",
     members: [
       {
-        name: "Antonios Fiala",
-        description: "General Secretary",
-        linkedin: "https://uk.linkedin.com/pub/antonios-fiala/85/701/453",
-        image: "images/team_member_antonios_fiala.jpg"
-      },
-      {
-        name: "Barbara Aubin",
-        description: "Head of Content",
-        linkedin: "https://www.linkedin.com/in/barbara-aubin-3302a491",
-        image: "images/team_member_barbara_aubin.jpg"
-      },
-      {
-        name: "Dominik Kirchdorfer",
-        description: "Head of Expansion",
-        linkedin: "https://www.linkedin.com/in/dfkirchdorfer/en",
-        image: "images/team_member_dominik_kirchdorfer.jpg"
-      },
-      {
-        name: "Martin Schmidler",
-        description: "Head of Public Relations",
-        linkedin: "http://www.linkedin.com/in/martin-schmidler",
-        image: "images/team_member_martin_scmidler.jpg"
-      },
-      {
         name: "Michael Cottakis",
         description: "President",
         linkedin: "https://uk.linkedin.com/pub/michael-cottakis/b6/985/5b4",
         image: "images/team_member_michael_cottakis.jpg"
+      },
+      {
+        name: "Antonios Fiala",
+        description: "General Secretary",
+        linkedin: "https://uk.linkedin.com/pub/antonios-fiala/85/701/453",
+        image: "images/team_member_antonios_fiala.jpg"
       },
       {
         name: "Nicholas Charalambides",
@@ -81,10 +63,28 @@ const teamContainers = [
         image: "images/team_member_nicholas_charalambides.jpg"
       },
       {
+        name: "Barbara Aubin",
+        description: "Head of Content",
+        linkedin: "https://www.linkedin.com/in/barbara-aubin-3302a491",
+        image: "images/team_member_barbara_aubin.jpg"
+      },
+      {
         name: "Elena Turci",
         description: "Head of Events",
         linkedin: "https://be.linkedin.com/in/eturci/de",
         image: "images/team_member_elena_turci.jpg"
+      },
+      {
+        name: "Martin Schmidler",
+        description: "Head of Public Relations",
+        linkedin: "http://www.linkedin.com/in/martin-schmidler",
+        image: "images/team_member_martin_scmidler.jpg"
+      },
+      {
+        name: "Dominik Kirchdorfer",
+        description: "Head of Expansion",
+        linkedin: "https://www.linkedin.com/in/dfkirchdorfer/en",
+        image: "images/team_member_dominik_kirchdorfer.jpg"
       }
     ]
   }
