@@ -35,12 +35,12 @@ const styles = {
 };
 
 /**
-* Renders a Header div element which contains:
-* - App Logo
-* - Main Links
-* - Social media Links
-* - TODO rescale the source image to the size decided in the html to prevent client computation
-*/
+ * Renders a Header div element which contains:
+ * - App Logo
+ * - Main Links
+ * - Social media Links
+ * - TODO rescale the source image to the size decided in the html to prevent client computation
+ */
 const Header = () => (
   <div style={styles.container}>
     <div style={styles.leftGroup}>
@@ -50,10 +50,12 @@ const Header = () => (
       <div>
         <ul style={styles.list}>
           <li><NavLink to="/home" value="Home"/></li>
-          <li><NavLink to="/updates" value="Updates"/></li>
-          <li><NavLink to="/collaborators" value="Collaborators"/></li>
-          <li><NavLink to="/who_we_are" value="Who We Are"/></li>
+          <li><NavLink to="/blog" value="Blog"/></li>
           <li><NavLink to="/events" value="Events"/></li>
+          <li><NavLink to="/chapters" value="Chapters"/></li>
+          <li><NavLink to="/who_we_are" value="Who We Are"/></li>
+          <li><NavLink to="/collaborators" value="Collaborators"/></li>
+          <li><NavLink to="/contact" value="Contact"/></li>
         </ul>
       </div>
       <div>
