@@ -4,6 +4,7 @@ Used links:
 * http://www.rapidtables.com/convert/color/rgb-to-hex.htm
 * http://fontawesome.io/icons
 * https://www.sejda.com/compress-pdf/
+* https://developers.google.com/maps/documentation/embed/start
 
 TODO:
 -----
