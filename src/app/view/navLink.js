@@ -5,7 +5,7 @@ const styles = {
   link: {
     textDecoration: 'none',
     display: 'block',
-    padding: '1em',
+    padding: '1em 0.5em 1em 0.5em',
     color: '#B19D64',
     borderBottom: '1px solid #B19D64',
     margin: '1em',

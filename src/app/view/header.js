@@ -18,8 +18,9 @@ const styles = {
   link: {
     textDecoration: 'none',
     display: 'block',
-    padding: '1em',
-    color: '#B19D64'
+    padding: '0.5em',
+    color: '#B19D64',
+    fontSize: '1.5em'
   },
   leftGroup: {
     textAlign: 'center',
@@ -64,7 +65,6 @@ const Header = () => (
           <li><a style={styles.link} target="_blank" href="https://www.linkedin.com/company/9387318"><i className="fa fa-linkedin-square"/></a></li>
           <li><a style={styles.link} target="_blank" href="https://www.facebook.com/1989generationinitiative"><i className="fa fa-facebook-square"/></a></li>
           <li><a style={styles.link} target="_blank" href="https://twitter.com/1989_Generation"><i className="fa fa-twitter"/></a></li>
-          <li><a style={styles.link} target="_blank" href="docs/manifesto.pdf">Our Manifesto</a></li>
         </ul>
       </div>
     </div>
