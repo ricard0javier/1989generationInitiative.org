@@ -42,7 +42,7 @@ const events = [
   },
   {
     landscape: 'images/landscape_london.png',
-    title: "Brussels 2015",
+    title: "London 2015",
     text: [
       'The Conference on the Redefinition of the European Mission, our first major event, brought together inspiring leaders and 89ers from all over Europe at LSE in June 2015.',
       'Personalities such as Valery Giscard d\'Estaing, Neil Kinnock and Christopher Pissarides came together with 40 talented Europeans and starting laying out the backbone of our policy proposals for reforming the EU.'
