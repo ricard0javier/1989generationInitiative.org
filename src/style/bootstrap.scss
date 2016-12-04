@@ -41,12 +41,14 @@ $warn-color:  #F0AD4E;
 
 
 //-------- brand design --------------
-body {
+html, body, #root {
   background-size: cover;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
   color: $font-color;
   min-width: 1200px;
+  margin: 0;
+  height: 100%;
 }
 
 img {
@@ -54,3 +56,13 @@ img {
 }
 
 //-------- end of brand design --------------
+
+
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: #5aadbb;
+  }
+}

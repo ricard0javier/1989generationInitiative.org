@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "font-awesome": "FortAwesome/Font-Awesome#179c519ae92af4c35c7b151e973955e83044bdfd",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
@@ -17,6 +16,7 @@
     "babel-polyfill": "^6.7.4",
     "babel-preset-es2015": "^6.2.0",
     "babel-preset-react": "^6.1.18",
+    "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.9.11",
     "browser-sync-spa": "^1.0.3",
     "css-loader": "^0.23.1",
