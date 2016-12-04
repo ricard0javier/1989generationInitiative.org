@@ -5,7 +5,8 @@ const styles = {
     color: '#B19D64',
     display: 'flex',
     flexDirection: 'row',
-    padding: '2em',
+    paddingLeft: '2em',
+    paddingRight: '2em',
     borderBottom: 'solid 1px #B19D64'
   },
   leftGroup: {
@@ -20,10 +21,11 @@ const SubHeaderComponent = ({pageName}) => (
       <h3>{pageName}</h3>
     </div>
     <div>
-      <div>
-        <span>We are an open policy network committed to mobilising young Europeans;</span><br/>
-        <span>or '89ers', to lead the long term regeneration of the European Project</span><br/>
-        <span>through the development of innovative policy proposals.</span><br/>
+      <div className="text">
+        <p>
+          We are an open policy network committed to mobilising young Europeans; or '89ers', to lead the long term
+          regeneration of the European Project through the development of innovative policy proposals.
+        </p>
       </div>
     </div>
   </div>

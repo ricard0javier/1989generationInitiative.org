@@ -4,7 +4,6 @@ import SubHeader from './subHeader';
 
 const styles = {
   container: {
-    padding: '1em 0 1em 0',
     color: '#B19D64'
   },
   teamContainer: {

@@ -1,24 +1,12 @@
 import React from "react";
-
-import SubHeader from './subHeader';
-
-const styles = {
-  container: {
-    padding: '1em 0 1em 0',
-    color: '#B19D64'
-  },
-  textContainer: {
-    color: '#02274A',
-    padding: '4em'
-  }
-};
+import SubHeader from "./subHeader";
 
 const ContactComponent = () => (
-  <div style={styles.container}>
+  <div>
     <SubHeader pageName="CONTACT"/>
-    <div style={styles.textContainer}>
+    <div className="text">
       <p>
-        TODO.
+        TODO
       </p>
     </div>
   </div>

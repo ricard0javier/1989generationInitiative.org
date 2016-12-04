@@ -3,10 +3,6 @@ import React from "react";
 import SubHeaderComponent from './subHeader';
 
 const styles = {
-  container: {
-    padding: '1em 0 1em 0',
-    color: '#B19D64'
-  },
   iconsContainer: {
     color: '#02274A',
     display: 'flex',
@@ -23,7 +19,7 @@ const styles = {
 };
 
 const HomeComponent = () => (
-  <div style={styles.container}>
+  <div>
     <SubHeaderComponent pageName="HOME"/>
     <div>
       <img src="images/inspiring_image.png" width="100%"/>

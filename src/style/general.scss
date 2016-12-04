@@ -1,0 +1,17 @@
+$secondary-color: #02274A;
+
+.text {
+
+  max-width: 45em;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  > p, h1, h2, h3, h4, h5 {
+    text-align: justify;
+  }
+}
+
+body {
+  color: $secondary-color;
+}

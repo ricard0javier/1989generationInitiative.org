@@ -3,25 +3,14 @@ import React from "react";
 import SubHeader from './subHeader';
 
 const styles = {
-  container: {
-    padding: '1em 0 1em 0',
-    color: '#B19D64'
-  },
   iconsContainer: {
     color: '#02274A',
     display: 'flex',
-    padding: '4em',
     flexWrap: 'wrap'
   },
   iconBox: {
-    display: 'flex',
-    flexDirection: 'column',
-    textAlign: 'center',
     flexBasis: '25%',
     padding: '2em'
-  },
-  iconBoxText: {
-    textAlign: 'left'
   }
 };
 
@@ -61,7 +50,7 @@ const collaborators = [
 ];
 
 const CollaboratorsComponent = () => (
-  <div style={styles.container}>
+  <div>
     <SubHeader pageName="COLLABORATORS"/>
     <div style={styles.iconsContainer}>
       {collaborators.map((collaborator, index) => (
@@ -69,8 +58,8 @@ const CollaboratorsComponent = () => (
           <div>
             <img src={collaborator.logo}/>
           </div>
-          <div style={styles.iconBoxText}>
-            <span>{collaborator.text}</span>
+          <div className="text">
+            <p>{collaborator.text}</p>
           </div>
         </div>
       ))}

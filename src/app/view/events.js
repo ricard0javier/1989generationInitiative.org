@@ -8,10 +8,6 @@ const styles = {
     display: 'flex',
     flexDirection: 'column'
   },
-  eventBoxText: {
-    textAlign: 'left',
-    padding: "2em"
-  },
   downloadLink: {
     fontSize: "12em",
     color: 'white'
@@ -60,7 +56,7 @@ const EventsComponent = () => (
             <div>
               <a style={styles.downloadLink} target="_blank" href="#"><i className="fa fa-cloud-download"/></a>
             </div>
-            <div style={styles.eventBoxText}>
+            <div className="text">
               <h2>{event.title}</h2>
               {event.text.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
