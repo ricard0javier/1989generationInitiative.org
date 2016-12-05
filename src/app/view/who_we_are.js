@@ -90,11 +90,13 @@ const teamContainers = [
     members: [
       {
         name: "Adela Alexandra Iacobov",
-        description: "Coordinator, Politics & Institutions"
+        description: "Coordinator, Politics & Institutions",
+        image: "images/team_member_adela_alexandra_iacobov.jpg"
       },
       {
         name: "Adele Marsullo",
-        description: "Content Officer, Politics & Institutions"
+        description: "Content Officer, Politics & Institutions",
+        image: "images/team_member_adele_marsullo.jpg"
       },
       {
         name: "François Barres",
@@ -106,12 +108,14 @@ const teamContainers = [
       },
       {
         name: "Riccardo Venturi",
-        description: "Coordinator, Identity"
+        description: "Coordinator, Identity",
+        image: "images/team_member_riccardo_venturi.jpg"
       },
       {
         name: "Hannah Soraya",
         description: "Content Officer, Identity",
-        twitter: "http://twitter.com/TheHannah__"
+        twitter: "http://twitter.com/TheHannah__",
+        image: "images/team_member_hannah_soraya.jpg"
       },
       {
         name: "Henrik von Homeyer",
@@ -123,7 +127,8 @@ const teamContainers = [
       },
       {
         name: "Nathalie Lambrecht",
-        description: "Coordinator, Economic Affairs"
+        description: "Coordinator, Economic Affairs",
+        image: "images/team_member_nathalie_lambrecht.jpg"
       },
       {
         name: "Alexandre Detroux",
@@ -144,12 +149,18 @@ const teamContainers = [
       {
         name: "Lina Papartyte",
         description: "Content Officer, Global Affairs",
-        linkedin: "https://lt.linkedin.com/in/lina-papartyte-97593589"
+        linkedin: "https://lt.linkedin.com/in/lina-papartyte-97593589",
+        image: "images/team_member_lina_papartyte.jpg"
       },
       {
         name: "Salvatore Berger",
         description: "Content Officer, Global Affairs",
         twitter: "http://twitter.com/BergerSalvatore"
+      },
+      {
+        name: "Boris Ajeganov",
+        description: "Content Officer, Global Affairs",
+        twitter: "http://twitter.com/ajeganov"
       },
       {
         name: "Tollak Bowitz",
@@ -229,6 +240,40 @@ const teamContainers = [
         name: "Sam Hufton",
         description: "Online Media Officer",
         image: "images/team_member_sam_hufton.jpg"
+      },
+      {
+        name: "Verena Reihs",
+        description: "Press Relations Officer",
+        linkedin: "https://nl.linkedin.com/in/verena-reihs-86380410b",
+        twitter: "http://twitter.com/en_lein"
+      }
+    ]
+  },
+  {
+    name: "Expansion Team",
+    members: [
+      {
+        name: "Julia Walschebauer",
+        description: "Regional Coordinator - Belgium",
+        linkedin: "http://twitter.com/JuliaWalsche",
+        image: "images/team_member_julia_walschebauer.jpg"
+      },
+      {
+        name: "Clemens Ableidinger",
+        description: "Regional Coordinator - Austria"
+      },
+      {
+        name: "Jakub Tlolka",
+        description: "Regional Coordinator - Slovakia",
+        image: "images/team_member_jakub_tlolka.jpg"
+      },
+      {
+        name: "Sylwia Borkowska-Waszak",
+        description: "Regional Coordinator - Scotland"
+      },
+      {
+        name: "Julia Schinzel",
+        description: "Intern"
       }
     ]
   }
