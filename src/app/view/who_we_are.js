@@ -203,27 +203,32 @@ const teamContainers = [
         name: "Otto Ilveskero",
         description: "Social Media Officer",
         linkedin: "https://uk.linkedin.com/in/otto-ilveskero-b32a47116/de",
-        twitter: "http://twitter.com/IlvesOtto"
+        twitter: "http://twitter.com/IlvesOtto",
+        image: "images/team_member_otto_ilveskero.jpg"
       },
       {
         name: "Florian L’Heureux",
         description: "Social Media Officer",
         linkedin: "https://be.linkedin.com/in/florian-l-heureux-327608b1/",
-        twitter: "http://twitter.com/flolhe"
+        twitter: "http://twitter.com/flolhe",
+        image: "images/team_member_florian_lheureux.jpg"
       },
       {
         name: "Elena Fabritius",
         description: "Network Management Officer",
-        linkedin: "https://uk.linkedin.com/in/elena-fabritius-5b464283/"
+        linkedin: "https://uk.linkedin.com/in/elena-fabritius-5b464283/",
+        image: "images/team_member_elena_fabritius.jpg"
       },
       {
         name: "Niall Lane",
         description: "Network Management Officer",
-        linkedin: "https://ie.linkedin.com/in/niall-lane-b20a6959/"
+        linkedin: "https://ie.linkedin.com/in/niall-lane-b20a6959/",
+        image: "images/team_member_niall_lane.jpg"
       },
       {
         name: "Sam Hufton",
-        description: "Online Media Officer"
+        description: "Online Media Officer",
+        image: "images/team_member_sam_hufton.jpg"
       }
     ]
   }
