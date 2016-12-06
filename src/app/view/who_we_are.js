@@ -3,8 +3,8 @@ import SubHeader from "./subHeader";
 
 const styles = {
   teamContainer: {
-    paddingLeft: "4em",
-    paddingRight: "4em"
+    paddingLeft: "10em",
+    paddingRight: "10em"
   },
   membersContainer: {
     color: '#B19D64',
@@ -315,6 +315,7 @@ const WhoWeAreComponent = () => (
         );
       })}
     </div>
+    <span>&nbsp;</span>
   </div>
 );
 
