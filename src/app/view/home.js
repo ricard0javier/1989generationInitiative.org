@@ -1,6 +1,7 @@
 import React from "react";
 
 import SubHeaderComponent from './subHeader';
+import {handleDonationClick} from '../utils/analytis';
 
 const styles = {
   iconsContainer: {
@@ -15,14 +16,30 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'space-between',
     textAlign: 'center'
+  },
+  background: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: "flex-end",
+    textAlign: "right",
+    backgroundImage: "url(images/inspiring_image.png)",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    backgroundPosition: "center top",
+    width: "100%",
+    height: "600px"
   }
 };
 
 const HomeComponent = () => (
   <div>
     <SubHeaderComponent pageName="HOME"/>
-    <div>
-      <img src="images/inspiring_image.png" width="100%"/>
+    <div style={styles.background}>
+      <form action="https://www.paypal.com/cgi-bin/webscr" onSubmit={handleDonationClick} method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick"/>
+        <input type="hidden" name="hosted_button_id" value="G7L4GW53UFHA2"/>
+        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal â€“ The safer, easier way to pay online!"/>
+      </form>
     </div>
     <div style={styles.iconsContainer}>
       <div style={styles.iconBox}>
