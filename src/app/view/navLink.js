@@ -19,13 +19,21 @@ const styles = {
 /**
 * Renders a Link element which is colored to 'cyan' when the Link is active
 */
-const NavLink = ({to, value}) => (
-  <Link style={styles.link} to={to} activeStyle={styles.active}>{value}</Link>
-);
+const NavLink = ({to, value, isExternalLink}) => {
+  if (isExternalLink) {
+    return (
+      <a style={styles.link} target="_blank" href="http://89ers.blogactiv.eu">{value}</a>
+    );
+  }
+  return (
+    <Link style={styles.link} to={to} activeStyle={styles.active}>{value}</Link>
+  );
+};
 
 NavLink.propTypes = {
   to: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired
+  value: PropTypes.string.isRequired,
+  isExternalLink: PropTypes.boolean
 };
 
 export default NavLink;

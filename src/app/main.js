@@ -7,7 +7,6 @@ import HomeComponent from "./view/home";
 import CollaboratorsComponent from "./view/collaborators";
 import EventsComponent from "./view/events";
 import WhoWeAreComponent from "./view/who_we_are";
-import BlogComponent from "./view/blog";
 import ChaptersComponent from "./view/chapters";
 import ContactComponent from "./view/contact";
 import reducers from "./controller/reducer";
@@ -35,7 +34,6 @@ const Main = () => (
         <Route path="collaborators" component={CollaboratorsComponent}/>
         <Route path="events" component={EventsComponent}/>
         <Route path="who_we_are" component={WhoWeAreComponent}/>
-        <Route path="blog" component={BlogComponent}/>
         <Route path="chapters" component={ChaptersComponent}/>
         <Route path="contact" component={ContactComponent}/>
       </Route>

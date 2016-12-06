@@ -51,7 +51,7 @@ const Header = () => (
       <div>
         <ul style={styles.list}>
           <li><NavLink to="/home" value="Home"/></li>
-          <li><NavLink to="/blog" value="Blog"/></li>
+          <li><NavLink to="/blog" value="Blog" isExternalLink="true"/></li>
           <li><NavLink to="/events" value="Events"/></li>
           <li><NavLink to="/who_we_are" value="Who We Are"/></li>
           <li><NavLink to="/collaborators" value="Collaborators"/></li>
