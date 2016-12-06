@@ -16,19 +16,6 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
-  goldBar: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    background: '#B19D64',
-    padding: '5px'
-  },
-  list: {
-    listStyle: 'none',
-    margin: '0',
-    display: 'flex',
-    flexDirection: 'row'
-  },
   link: {
     textDecoration: 'none',
     display: 'block',
@@ -43,14 +30,6 @@ const styles = {
 */
 const Footer = () => (
   <div>
-    <div style={styles.goldBar}>
-      <ul style={styles.list}>
-        <li><a style={styles.link} target="_blank" href="#"><i className="fa fa-commenting-o fa-1x"/></a></li>
-        <li><a style={styles.link} target="_blank" href="#"><i className="fa fa-cloud-download fa-1x"/></a></li>
-        <li><a style={styles.link} target="_blank" href="#"><i className="fa fa-server fa-1x"/></a></li>
-        <li><a style={styles.link} target="_blank" href="#"><i className="fa fa-search fa-1x"/></a></li>
-      </ul>
-    </div>
     <div style={styles.container}>
       <Header/>
     </div>
