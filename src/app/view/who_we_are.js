@@ -101,11 +101,13 @@ const teamContainers = [
       },
       {
         name: "François Barres",
-        description: "Content Officer, Politics & Institutions"
+        description: "Content Officer, Politics & Institutions",
+        image: "images/team_member_francois_barres.jpg"
       },
       {
-        name: "Alessandro Giovanni",
-        description: "Content Officer, Politics & Institutions"
+        name: "Alessandro Granato",
+        description: "Content Officer, Politics & Institutions",
+        image: "images/team_member_alex_granato.jpg"
       },
       {
         name: "Riccardo Venturi",
@@ -120,11 +122,13 @@ const teamContainers = [
       },
       {
         name: "Henrik von Homeyer",
-        description: "Content Officer, Identity"
+        description: "Content Officer, Identity",
+        image: "images/team_member_henrik_von_homeyer.jpg"
       },
       {
         name: "Lina-Katerina Bikou",
-        description: "Content Officer, Identity"
+        description: "Content Officer, Identity",
+        image: "images/team_member_lina_katarina_bikou.jpg"
       },
       {
         name: "Nathalie Lambrecht",
@@ -133,11 +137,13 @@ const teamContainers = [
       },
       {
         name: "Alexandre Detroux",
-        description: "Content Officer, Economic Affairs"
+        description: "Content Officer, Economic Affairs",
+        image: "images/team_member_alexandre_detroux.jpg"
       },
       {
         name: "Pamina Karl",
-        description: "Content Officer, Economic Affairs"
+        description: "Content Officer, Economic Affairs",
+        image: "images/team_member_pamina_karl.jpg"
       },
       {
         name: "Anouk Canet",
@@ -145,7 +151,8 @@ const teamContainers = [
       },
       {
         name: "Constantin Gouvy",
-        description: "Coordinator, Global Affairs"
+        description: "Coordinator, Global Affairs",
+        image: "images/team_member_constantin_gouvy.jpg"
       },
       {
         name: "Lina Papartyte",
@@ -156,17 +163,20 @@ const teamContainers = [
       {
         name: "Salvatore Berger",
         description: "Content Officer, Global Affairs",
-        twitter: "http://twitter.com/BergerSalvatore"
+        twitter: "http://twitter.com/BergerSalvatore",
+        image: "images/team_member_salvatore_berger.jpg"
       },
       {
         name: "Boris Ajeganov",
         description: "Content Officer, Global Affairs",
-        twitter: "http://twitter.com/ajeganov"
+        twitter: "http://twitter.com/ajeganov",
+        image: "images/team_member_boris_ajeganov.jpg"
       },
       {
         name: "Tollak Bowitz",
         description: "Content Officer, Global Affairs",
-        twitter: "http://twitter.com/ztiw0b"
+        twitter: "http://twitter.com/ztiw0b",
+        image: "images/team_member_tollak_bowitz.jpg"
       },
       {
         name: "Edoardo Ravaioli",
