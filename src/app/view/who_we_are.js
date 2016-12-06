@@ -3,6 +3,7 @@ import SubHeader from "./subHeader";
 
 const styles = {
   teamContainer: {
+    paddingBottom: "10em",
     paddingLeft: "10em",
     paddingRight: "10em"
   },
@@ -315,7 +316,6 @@ const WhoWeAreComponent = () => (
         );
       })}
     </div>
-    <span>&nbsp;</span>
   </div>
 );
 
