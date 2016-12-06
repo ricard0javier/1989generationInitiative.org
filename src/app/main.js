@@ -2,6 +2,7 @@ import React from "react";
 import {Router, Route, browserHistory, IndexRedirect} from "react-router";
 import {Provider} from "react-redux";
 import {createStore} from "redux";
+import ReactGA from 'react-ga';
 import HomeComponent from "./view/home";
 import CollaboratorsComponent from "./view/collaborators";
 import EventsComponent from "./view/events";
@@ -12,7 +13,13 @@ import ContactComponent from "./view/contact";
 import reducers from "./controller/reducer";
 import TilesContainer from "./controller/container/tiles-container";
 
+ReactGA.initialize('UA-61569536-1', {debug: false});
 const store = createStore(reducers);
+
+function logPageView() {
+  ReactGA.set({page: window.location.pathname});
+  ReactGA.pageview(window.location.pathname);
+}
 
 /**
 * Configures the application with:
@@ -21,7 +28,7 @@ const store = createStore(reducers);
 */
 const Main = () => (
   <Provider store={store}>
-    <Router history={browserHistory}>
+    <Router history={browserHistory} onUpdate={logPageView}>
       <Route path="/" component={TilesContainer}>
         <IndexRedirect to="/home"/>
         <Route path="home" component={HomeComponent}/>
