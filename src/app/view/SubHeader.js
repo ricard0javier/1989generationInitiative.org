@@ -1,4 +1,4 @@
-import React, {PropTypes} from "react";
+import React from "react";
 
 const styles = {
   titleContainer: {
@@ -15,10 +15,10 @@ const styles = {
   }
 };
 
-const SubHeaderComponent = ({pageName}) => (
+const SubHeaderComponent = () => (
   <div style={styles.titleContainer}>
     <div style={styles.leftGroup}>
-      <h3>{pageName}</h3>
+      <span>&nbsp;</span>
     </div>
     <div>
       <div className="text">
@@ -30,9 +30,5 @@ const SubHeaderComponent = ({pageName}) => (
     </div>
   </div>
 );
-
-SubHeaderComponent.propTypes = {
-  pageName: PropTypes.string.isRequired
-};
 
 export default SubHeaderComponent;

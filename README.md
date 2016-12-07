@@ -26,7 +26,7 @@ Used links:
 * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 * http://www.rapidtables.com/convert/color/rgb-to-hex.htm
 * http://fontawesome.io/icons
-* https://www.sejda.com/compress-pdf/
+* https://www.sejda.com/compress-pdf
 * https://developers.google.com/maps/documentation/embed/start
 * https://github.com/import-io/s3-deploy
 

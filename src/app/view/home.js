@@ -1,7 +1,6 @@
 import React from "react";
 
 import SubHeaderComponent from './subHeader';
-import Donate from './donate';
 
 const styles = {
   iconsContainer: {
@@ -22,7 +21,7 @@ const styles = {
     flexDirection: 'column',
     justifyContent: "flex-end",
     textAlign: "right",
-    backgroundImage: "url(images/inspiring_image.png)",
+    backgroundImage: "url(images/home_main_image.png)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center top",
@@ -35,7 +34,6 @@ const HomeComponent = () => (
   <div>
     <SubHeaderComponent pageName="HOME"/>
     <div style={styles.background}>
-      <Donate/>
     </div>
     <div style={styles.iconsContainer}>
       <div style={styles.iconBox}>
