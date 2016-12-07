@@ -147,7 +147,8 @@ const teamContainers = [
       },
       {
         name: "Anouk Canet",
-        description: "Content Officer, Economic Affairs"
+        description: "Content Officer, Economic Affairs",
+        image: "images/team_member_anouk_canet.jpg"
       },
       {
         name: "Constantin Gouvy",
@@ -256,7 +257,8 @@ const teamContainers = [
         name: "Verena Reihs",
         description: "Press Relations Officer",
         linkedin: "https://nl.linkedin.com/in/verena-reihs-86380410b",
-        twitter: "http://twitter.com/en_lein"
+        twitter: "http://twitter.com/en_lein",
+        image: "images/team_member_verena_reihs.jpg"
       }
     ]
   },
