@@ -25,7 +25,7 @@ const EventComponent = () => (
       <p>Following the Conference, Webinars will be held to further develop the ideas and ultimately turn them into concrete policy proposals. Finally, these will be presented to high-ranking EU officials, the media, and the wider public in a Presentation Event in autumn 2017 (details to be announced at a later date).</p>
 
       <h2>How to apply</h2>
-      <a target="_blank" href="http://tinyurl.com/TacklingPopulismApplication ">Apply now</a>
+      <a target="_blank" href="http://tinyurl.com/TacklingPopulismApplication">Apply now</a>
       <p>Applications are open from December 7th until January 8th. In order to apply, you need to provide the following:</p>
       <ul>
         <li><span>Some basic personal information</span></li>

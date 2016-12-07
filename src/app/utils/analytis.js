@@ -13,3 +13,10 @@ export const handleDonationClick = () => {
     action: 'Donation Attempt'
   });
 };
+
+export const handleClick = href => {
+  ReactGA.event({
+    category: 'click',
+    action: href
+  });
+};
