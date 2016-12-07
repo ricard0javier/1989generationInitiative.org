@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router";
 
 import SubHeader from './subHeader';
 
@@ -50,6 +51,13 @@ const EventsComponent = () => (
   <div style={styles.container}>
     <SubHeader pageName="EVENTS"/>
     <div style={styles.eventsContainer}>
+      <div style={styles.eventBoxFunc("images/landscape_london.png")}>
+        <div className="text">
+          <h2>Launch Conference 2017</h2>
+          <p>The Conference will address the theme of populism with the aim of understanding its origins and appeal. By observing where traditional ruling elites have failed, we look at ways to supplant the rhetoric of fear and hate, with one of hope. Ultimately, the Conference will offer a unique opportunity for interaction and debate between accomplished professionals, policy makers, scholars, and 89ers - young European citizens coming from all over the continent.</p>
+          <Link to="/event">Read more...</Link>
+        </div>
+      </div>
       {events.map((event, index) => (
         <div key={index}>
           <div style={styles.eventBoxFunc(event.landscape)}>

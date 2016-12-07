@@ -8,6 +8,7 @@ import EventsComponent from "./view/events";
 import WhoWeAreComponent from "./view/who_we_are";
 import ChaptersComponent from "./view/chapters";
 import ContactComponent from "./view/contact";
+import EventComponent from "./view/event";
 import reducers from "./controller/reducer";
 import TilesContainer from "./controller/container/tiles-container";
 import {handlePageView} from './utils/analytis';
@@ -30,6 +31,7 @@ const Main = () => (
         <Route path="who_we_are" component={WhoWeAreComponent}/>
         <Route path="chapters" component={ChaptersComponent}/>
         <Route path="contact" component={ContactComponent}/>
+        <Route path="event" component={EventComponent}/>
       </Route>
     </Router>
   </Provider>
