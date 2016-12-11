@@ -43,7 +43,7 @@ const Footer = () => (
         <span>London WC2A 2AE</span><br/>
       </div>
       <div>
-        <img src="images/logo_european_institute.png"/>
+        <img src="http://static.1989generationinitiative.org/images/logo_european_institute.png"/>
       </div>
     </div>
   </div>

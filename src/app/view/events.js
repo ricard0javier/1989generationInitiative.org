@@ -30,7 +30,7 @@ const styles = {
 
 const events = [
   {
-    landscape: 'images/landscape_brussels.png',
+    landscape: 'http://static.1989generationinitiative.org/images/landscape_brussels.png',
     title: "Brussels 2016",
     text: [
       'Our second major event, 89ers. Writing the Next Chapter, was held at the European Parliament in Brussels in April 2016.',
@@ -38,7 +38,7 @@ const events = [
     ]
   },
   {
-    landscape: 'images/landscape_london.png',
+    landscape: 'http://static.1989generationinitiative.org/images/landscape_london.png',
     title: "London 2015",
     text: [
       'The Conference on the Redefinition of the European Mission, our first major event, brought together inspiring leaders and 89ers from all over Europe at LSE in June 2015.',
@@ -51,7 +51,7 @@ const EventsComponent = () => (
   <div style={styles.container}>
     <SubHeader pageName="EVENTS"/>
     <div style={styles.eventsContainer}>
-      <div style={styles.eventBoxFunc("images/landscape_london.png")}>
+      <div style={styles.eventBoxFunc("http://static.1989generationinitiative.org/images/landscape_london.png")}>
         <div className="text">
           <h2>Launch Conference 2017</h2>
           <p>The Conference will address the theme of populism with the aim of understanding its origins and appeal. By observing where traditional ruling elites have failed, we look at ways to supplant the rhetoric of fear and hate, with one of hope. Ultimately, the Conference will offer a unique opportunity for interaction and debate between accomplished professionals, policy makers, scholars, and 89ers - young European citizens coming from all over the continent.</p>

@@ -46,43 +46,43 @@ const teamContainers = [
         name: "Michael Cottakis",
         description: "President",
         linkedin: "https://uk.linkedin.com/pub/michael-cottakis/b6/985/5b4",
-        image: "images/team_member_michael_cottakis.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_michael_cottakis.jpg"
       },
       {
         name: "Antonios Fiala",
         description: "General Secretary",
         linkedin: "https://uk.linkedin.com/pub/antonios-fiala/85/701/453",
-        image: "images/team_member_antonios_fiala.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_antonios_fiala.jpg"
       },
       {
         name: "Nicholas Charalambides",
         description: "VP Treasury",
         linkedin: "https://uk.linkedin.com/in/nicholascharalambides",
-        image: "images/team_member_nicholas_charalambides.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_nicholas_charalambides.jpg"
       },
       {
         name: "Barbara Aubin",
         description: "Head of Content",
         linkedin: "https://www.linkedin.com/in/barbara-aubin-3302a491",
-        image: "images/team_member_barbara_aubin.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_barbara_aubin.jpg"
       },
       {
         name: "Elena Turci",
         description: "Head of Events",
         linkedin: "https://be.linkedin.com/in/eturci/de",
-        image: "images/team_member_elena_turci.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_elena_turci.jpg"
       },
       {
         name: "Martin Schmidler",
         description: "Head of Public Relations",
         linkedin: "http://www.linkedin.com/in/martin-schmidler",
-        image: "images/team_member_martin_scmidler.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_martin_scmidler.jpg"
       },
       {
         name: "Dominik Kirchdorfer",
         description: "Head of Expansion",
         linkedin: "https://www.linkedin.com/in/dfkirchdorfer/en",
-        image: "images/team_member_dominik_kirchdorfer.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_dominik_kirchdorfer.jpg"
       }
     ]
   },
@@ -92,92 +92,92 @@ const teamContainers = [
       {
         name: "Adela Alexandra Iacobov",
         description: "Coordinator, Politics & Institutions",
-        image: "images/team_member_adela_alexandra_iacobov.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_adela_alexandra_iacobov.jpg"
       },
       {
         name: "Adele Marsullo",
         description: "Content Officer, Politics & Institutions",
-        image: "images/team_member_adele_marsullo.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_adele_marsullo.jpg"
       },
       {
         name: "François Barres",
         description: "Content Officer, Politics & Institutions",
-        image: "images/team_member_francois_barres.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_francois_barres.jpg"
       },
       {
         name: "Alessandro Granato",
         description: "Content Officer, Politics & Institutions",
-        image: "images/team_member_alex_granato.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_alex_granato.jpg"
       },
       {
         name: "Riccardo Venturi",
         description: "Coordinator, Identity",
-        image: "images/team_member_riccardo_venturi.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_riccardo_venturi.jpg"
       },
       {
         name: "Hannah Soraya",
         description: "Content Officer, Identity",
         twitter: "http://twitter.com/TheHannah__",
-        image: "images/team_member_hannah_soraya.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_hannah_soraya.jpg"
       },
       {
         name: "Henrik von Homeyer",
         description: "Content Officer, Identity",
-        image: "images/team_member_henrik_von_homeyer.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_henrik_von_homeyer.jpg"
       },
       {
         name: "Lina-Katerina Bikou",
         description: "Content Officer, Identity",
-        image: "images/team_member_lina_katarina_bikou.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_lina_katarina_bikou.jpg"
       },
       {
         name: "Nathalie Lambrecht",
         description: "Coordinator, Economic Affairs",
-        image: "images/team_member_nathalie_lambrecht.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_nathalie_lambrecht.jpg"
       },
       {
         name: "Alexandre Detroux",
         description: "Content Officer, Economic Affairs",
-        image: "images/team_member_alexandre_detroux.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_alexandre_detroux.jpg"
       },
       {
         name: "Pamina Karl",
         description: "Content Officer, Economic Affairs",
-        image: "images/team_member_pamina_karl.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_pamina_karl.jpg"
       },
       {
         name: "Anouk Canet",
         description: "Content Officer, Economic Affairs",
-        image: "images/team_member_anouk_canet.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_anouk_canet.jpg"
       },
       {
         name: "Constantin Gouvy",
         description: "Coordinator, Global Affairs",
-        image: "images/team_member_constantin_gouvy.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_constantin_gouvy.jpg"
       },
       {
         name: "Lina Papartyte",
         description: "Content Officer, Global Affairs",
         linkedin: "https://lt.linkedin.com/in/lina-papartyte-97593589",
-        image: "images/team_member_lina_papartyte.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_lina_papartyte.jpg"
       },
       {
         name: "Salvatore Berger",
         description: "Content Officer, Global Affairs",
         twitter: "http://twitter.com/BergerSalvatore",
-        image: "images/team_member_salvatore_berger.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_salvatore_berger.jpg"
       },
       {
         name: "Boris Ajeganov",
         description: "Content Officer, Global Affairs",
         twitter: "http://twitter.com/ajeganov",
-        image: "images/team_member_boris_ajeganov.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_boris_ajeganov.jpg"
       },
       {
         name: "Tollak Bowitz",
         description: "Content Officer, Global Affairs",
         twitter: "http://twitter.com/ztiw0b",
-        image: "images/team_member_tollak_bowitz.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_tollak_bowitz.jpg"
       },
       {
         name: "Edoardo Ravaioli",
@@ -227,38 +227,38 @@ const teamContainers = [
         description: "Social Media Officer",
         linkedin: "https://uk.linkedin.com/in/otto-ilveskero-b32a47116/de",
         twitter: "http://twitter.com/IlvesOtto",
-        image: "images/team_member_otto_ilveskero.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_otto_ilveskero.jpg"
       },
       {
         name: "Florian L’Heureux",
         description: "Social Media Officer",
         linkedin: "https://be.linkedin.com/in/florian-l-heureux-327608b1/",
         twitter: "http://twitter.com/flolhe",
-        image: "images/team_member_florian_lheureux.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_florian_lheureux.jpg"
       },
       {
         name: "Elena Fabritius",
         description: "Network Management Officer",
         linkedin: "https://uk.linkedin.com/in/elena-fabritius-5b464283/",
-        image: "images/team_member_elena_fabritius.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_elena_fabritius.jpg"
       },
       {
         name: "Niall Lane",
         description: "Network Management Officer",
         linkedin: "https://ie.linkedin.com/in/niall-lane-b20a6959/",
-        image: "images/team_member_niall_lane.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_niall_lane.jpg"
       },
       {
         name: "Sam Hufton",
         description: "Online Media Officer",
-        image: "images/team_member_sam_hufton.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_sam_hufton.jpg"
       },
       {
         name: "Verena Reihs",
         description: "Press Relations Officer",
         linkedin: "https://nl.linkedin.com/in/verena-reihs-86380410b",
         twitter: "http://twitter.com/en_lein",
-        image: "images/team_member_verena_reihs.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_verena_reihs.jpg"
       }
     ]
   },
@@ -269,7 +269,7 @@ const teamContainers = [
         name: "Julia Walschebauer",
         description: "Regional Coordinator - Belgium",
         linkedin: "http://twitter.com/JuliaWalsche",
-        image: "images/team_member_julia_walschebauer.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_julia_walschebauer.jpg"
       },
       {
         name: "Clemens Ableidinger",
@@ -278,7 +278,7 @@ const teamContainers = [
       {
         name: "Jakub Tlolka",
         description: "Regional Coordinator - Slovakia",
-        image: "images/team_member_jakub_tlolka.jpg"
+        image: "http://static.1989generationinitiative.org/images/team_member_jakub_tlolka.jpg"
       },
       {
         name: "Sylwia Borkowska-Waszak",
@@ -308,7 +308,7 @@ const WhoWeAreComponent = () => (
                 }
                 let memberImage = member.image;
                 if (member.image === undefined) {
-                  memberImage = "images/team_member_default_image.jpg";
+                  memberImage = "http://static.1989generationinitiative.org/images/team_member_default_image.jpg";
                 }
                 return (
                   <div key={memberIndex} style={styles.iconBox(memberReverse)}>

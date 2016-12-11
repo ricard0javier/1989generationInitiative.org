@@ -22,7 +22,7 @@ const styles = {
     flexDirection: 'column',
     justifyContent: "flex-end",
     textAlign: "left",
-    backgroundImage: "url(images/home_main_image.png)",
+    backgroundImage: "url(http://static.1989generationinitiative.org/images/home_main_image.png)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center top",
@@ -36,30 +36,30 @@ const HomeComponent = () => (
     <SubHeaderComponent pageName="HOME"/>
     <div style={styles.background}>
       <LinkButton href="http://tinyurl.com/TacklingPopulismApplication" text="Application Form"/>
-      <LinkButton href="docs/Tackling_Populism__Hope_over_Fear.pdf" text="Conference Booklet"/>
+      <LinkButton href="http://static.1989generationinitiative.org/docs/Tackling_Populism__Hope_over_Fear.pdf" text="Conference Booklet"/>
     </div>
     <div style={styles.iconsContainer}>
       <div style={styles.iconBox}>
         <div>
-          <img src="images/icon_policies.png"/>
+          <img src="http://static.1989generationinitiative.org/images/icon_policies.png"/>
         </div>
         <span>Policies for People</span>
       </div>
       <div style={styles.iconBox}>
         <div>
-          <img src="images/icon_solidarity.png"/>
+          <img src="http://static.1989generationinitiative.org/images/icon_solidarity.png"/>
         </div>
         <span>Solidarity</span>
       </div>
       <div style={styles.iconBox}>
         <div>
-          <img src="images/icon_connectivity.png"/>
+          <img src="http://static.1989generationinitiative.org/images/icon_connectivity.png"/>
         </div>
         <span>Connectivity</span>
       </div>
       <div style={styles.iconBox}>
         <div>
-          <img src="images/icon_opportunity.png"/>
+          <img src="http://static.1989generationinitiative.org/images/icon_opportunity.png"/>
         </div>
         <span>Opportunity</span>
       </div>

@@ -45,7 +45,7 @@ const styles = {
 const Header = () => (
   <div style={styles.container}>
     <div style={styles.leftGroup}>
-      <img src="images/logo_1989initiative.png" width="127px" height="80px"/>
+      <img src="http://static.1989generationinitiative.org/images/logo_1989initiative.png" width="127px" height="80px"/>
     </div>
     <div style={styles.rightGroup}>
       <div>

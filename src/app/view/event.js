@@ -17,7 +17,7 @@ const EventComponent = () => (
     <div className="text" style={styles.eventsContainer}>
 
       <h1>Launch Conference 2017</h1>
-      <img src="images/landscape_london.png"/>
+      <img src="http://static.1989generationinitiative.org/images/landscape_london.png"/>
 
       <h2>Introduction</h2>
       <p>The Conference will address the theme of populism with the aim of understanding its origins and appeal. By observing where traditional ruling elites have failed, we look at ways to supplant the rhetoric of fear and hate, with one of hope. Ultimately, the Conference will offer a unique opportunity for interaction and debate between accomplished professionals, policy makers, scholars, and 89ers - young European citizens coming from all over the continent.</p>
@@ -52,7 +52,7 @@ const EventComponent = () => (
       <p>The Keynote Debate will be a public roundtable where the keynote debaters will be asked questions concerning populism and related issues. In order to ensure an ordered debate, questions will be collected in advance.</p>
 
       <h3>Roundtable Topics</h3>
-      <p>Debates will be centered around four areas, with two Roundtables each: Identity, Politics & Institutions, Economics, and Global Affairs. To learn more details about the topics of the Roundtables, read our <a target="_blank" href="http://89ers.blogactiv.eu/2016/10/17/tackling-populism-hope-over-fear/">blog post</a> or download our <a target="_blank" href="docs/Tackling_Populism__Hope_over_Fear.pdf">Conference booklet</a>.</p>
+      <p>Debates will be centered around four areas, with two Roundtables each: Identity, Politics & Institutions, Economics, and Global Affairs. To learn more details about the topics of the Roundtables, read our <a target="_blank" href="http://89ers.blogactiv.eu/2016/10/17/tackling-populism-hope-over-fear/">blog post</a> or download our <a target="_blank" href="http://static.1989generationinitiative.org/docs/Tackling_Populism__Hope_over_Fear.pdf">Conference booklet</a>.</p>
 
       <h2>Speakers & Experts</h2>
       <p>We have invited leading experts and researchers from various disciplines, as well as high-ranking politicians of all stripes and ideological backgrounds.</p>
