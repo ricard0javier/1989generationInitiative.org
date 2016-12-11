@@ -1,8 +1,4 @@
 $fa-font-path: '../node_modules/font-awesome/fonts';
-$icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
-$icon-font-name: 'glyphicons-halflings-regular';
 @import '../node_modules/font-awesome/scss/font-awesome.scss';
-@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss';
 @import "style/bootstrap";
-@import "style/article";
 @import "style/general";

@@ -1,5 +1,5 @@
 import React, {PropTypes} from "react";
-import Header from "./header";
+import HeaderResponsive from "./headerResponsive";
 import Footer from "./footer";
 
 const styles = {
@@ -21,7 +21,7 @@ const styles = {
 const Tiles = ({children}) => {
   return (
     <div style={styles.container}>
-      <Header/>
+      <HeaderResponsive/>
       {children}
       <Footer/>
     </div>

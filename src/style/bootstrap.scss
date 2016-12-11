@@ -1,31 +1,39 @@
 // -------------- Customization --------------
-$shadow-color: #0D1A20;
-$background-color: #1F2E3E;
-$info-color:  #34A1DB;
-$font-color: #ECF0F1;
-$danger-color: #D81F19;
-$success-color:  #5CB85C;
-$warn-color:  #F0AD4E;
+$icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+$icon-font-name: 'glyphicons-halflings-regular';
+$navbar-default-bg: transparent;
+$navbar-default-link-color: #B19D64;
+$navbar-default-link-hover-color: #B19D64;
+$navbar-default-link-active-color: #B19D64;
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss';
 
 // -------------- bootstrap --------------
-.navbar-inverse {
-  background-color: $background-color;
-  border-color: $shadow-color;
+.navbar-brand {
+  padding: 0 0 0 1em;
+  height: 80px;
+  margin-top: -30px;
 }
 
-.navbar-inverse .navbar-brand {
-  color: $font-color;
+.navbar-nav.navbar-right {
+  margin: 10px -30px;
 }
 
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  color: $font-color;
-  background-color: $danger-color;
-}
 
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: $font-color;
-  background-color: transparent;
+.navbar-nav {
+  > li > a {
+    margin-right: 1em;
+    border-bottom: 1px solid #B19D64;
+  }
+
+  > .active > a {
+    &,
+    &:hover,
+    &:focus {
+      color: $navbar-default-link-active-color;
+      background-color: $navbar-default-link-active-bg;
+      border-top: 1px solid #B19D64;
+    }
+  }
 }
 //-------- end of bootstrap --------------
 
@@ -41,15 +49,6 @@ $warn-color:  #F0AD4E;
 
 
 //-------- brand design --------------
-html, body, #root {
-  background-size: cover;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  overflow-x: hidden;
-  min-width: 800px;
-  margin: 0;
-  height: 100%;
-}
-
 img {
   max-width: 100%;
 }

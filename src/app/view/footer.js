@@ -1,6 +1,6 @@
 import React from "react";
 
-import Header from './header';
+import HeaderResponsive from './headerResponsive';
 
 const styles = {
   container: {
@@ -31,7 +31,7 @@ const styles = {
 const Footer = () => (
   <div>
     <div style={styles.container}>
-      <Header/>
+      <HeaderResponsive/>
     </div>
     <div style={styles.containerBottom}>
       <div><span/></div>
