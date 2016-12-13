@@ -35,8 +35,18 @@ const EventComponent = () => (
       </ul>
       <p>Please note that we don’t provide upload functionality; you therefore have to copy & paste your curriculum vitae.</p>
 
-      <h3>Selection Process</h3>
-      <p>Selection will be based solely on merit. No ‘first come, first serve’ principle.</p>
+      <h3>Requirements</h3>
+
+      <p>We require enthusiastic, capable and committed people to come and contribute at the conference. This will be a long process, lasting from February to June, and during this time delegates will have to be able to participate in 2 webinars per month, each lasting one hour. In the course of the Webinars, you will flesh out the ideas from the roundtables at the launch conference. Delegates will have to give their commitment to these webinars for the entire programme to be a success.</p>
+      <p>Applicants must also:</p>
+      <ul>
+        <li><span>Be under 34 years old;</span></li>
+        <li><span>Have an academic or professional interest in the European Union or European Affairs;</span></li>
+        <li><span>Have demonstrated leadership potential;</span></li>
+        <li><span>Speak English to C1 level</span></li>
+      </ul>
+
+      <p>Selection will be based solely on merit; no first-come-first-serve principle.</p>
 
       <h3>Webinars</h3>
       <p>By applying, you also  commit to take part in the Webinars following the Conference. These will be held every two weeks from March until the end of June, and last for approximately 60 minutes each. In the course of the Webinars, you will flesh out the ideas from the Roundtables.</p>
