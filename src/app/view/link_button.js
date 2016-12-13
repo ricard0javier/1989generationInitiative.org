@@ -11,7 +11,7 @@ const styles = {
     textAlign: "center",
     width: "14em",
     height: "3em",
-    margin: "0.5em",
+    marginTop: "0.5em",
     padding: '1em'
   },
   link: {

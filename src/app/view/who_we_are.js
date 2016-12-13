@@ -1,11 +1,12 @@
 import React from "react";
+import {Image} from "react-bootstrap";
 import SubHeader from "./subHeader";
 
 const styles = {
   teamContainer: {
-    paddingBottom: "10em",
-    paddingLeft: "10em",
-    paddingRight: "10em"
+    paddingBottom: "10px",
+    paddingLeft: "10px",
+    paddingRight: "10px"
   },
   membersContainer: {
     color: '#B19D64',
@@ -18,11 +19,11 @@ const styles = {
   },
   link: {
     color: '#B19D64',
-    fontSize: "1em"
+    fontSize: "12px"
   },
   memberText(memberReverse) {
     return {
-      padding: "1em",
+      padding: "5px",
       textAlign: memberReverse ? 'right' : 'left',
       width: '50%',
       height: '100%'
@@ -313,7 +314,7 @@ const WhoWeAreComponent = () => (
                 return (
                   <div key={memberIndex} style={styles.iconBox(memberReverse)}>
                     <div style={styles.memberImage}>
-                      <img src={memberImage}/>
+                      <Image src={memberImage} responsive/>
                     </div>
                     <div style={styles.memberText(memberReverse)}>
                       <h4>{member.name}</h4>
