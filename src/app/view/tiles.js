@@ -20,7 +20,7 @@ const styles = {
 */
 const Tiles = ({children}) => {
   return (
-    <div style={styles.container}>
+    <div className="container-fluid" style={styles.container}>
       <HeaderResponsive/>
       {children}
       <Footer/>

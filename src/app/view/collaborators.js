@@ -2,18 +2,6 @@ import React from "react";
 
 import SubHeader from './subHeader';
 
-const styles = {
-  iconsContainer: {
-    color: '#02274A',
-    display: 'flex',
-    flexWrap: 'wrap'
-  },
-  iconBox: {
-    flexBasis: '25%',
-    padding: '2em'
-  }
-};
-
 const collaborators = [
   {
     logo: 'http://static.1989generationinitiative.org/images/logo_european_institute_blue.png',
@@ -52,17 +40,17 @@ const collaborators = [
 const CollaboratorsComponent = () => (
   <div>
     <SubHeader pageName="COLLABORATORS"/>
-    <div style={styles.iconsContainer}>
+    <div className="row">
       {collaborators.map((collaborator, index) => (
-        <div key={index} style={styles.iconBox}>
+        <div key={index} className="collaborator col-sm-3">
           <div>
-            <img src={collaborator.logo}/>
+            <img className="img-responsive center-block" src={collaborator.logo}/>
           </div>
           <div className="text">
             <p>{collaborator.text}</p>
           </div>
         </div>
-      ))}
+        ))}
     </div>
   </div>
 );

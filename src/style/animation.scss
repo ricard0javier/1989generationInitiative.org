@@ -1,0 +1,38 @@
+$secondary-color: #02274A;
+
+// home
+.animated-fade-in {
+  animation-name: title;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0,1.25,.52,1.41);
+  transform-origin: left bottom;
+}
+.animated-fade-in-later {
+  animation-name: subTitle;
+  animation-duration: .5s;
+  transform-origin: left center;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+
+@keyframes title {
+  from {
+    transform: scale3d(.75, .75, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+@keyframes subTitle {
+  from {
+    margin-left: -100%;
+    color: transparent;
+  }
+  to {
+    margin-left: 0;
+    color: #B19D64;
+  }
+}

@@ -1,10 +1,12 @@
 // -------------- Customization --------------
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 $icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 $icon-font-name: 'glyphicons-halflings-regular';
 $navbar-default-bg: transparent;
 $navbar-default-link-color: #B19D64;
 $navbar-default-link-hover-color: #B19D64;
 $navbar-default-link-active-color: #B19D64;
+$font-family-base: 'Titillium Web', sans-serif;
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss';
 
 // -------------- bootstrap --------------

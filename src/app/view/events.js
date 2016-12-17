@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router";
+import {Button} from "react-bootstrap";
 
 import SubHeader from './subHeader';
 
@@ -10,20 +11,16 @@ const styles = {
     flexDirection: 'column'
   },
   downloadLink: {
-    fontSize: "12em",
+    fontSize: "100px",
     color: 'white'
   },
   eventBoxFunc(image) {
     return {
-      display: 'flex',
-      justifyContent: 'space-between',
       textAlign: 'center',
-      width: '100%',
-      padding: "5em",
       backgroundImage: `linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(${image})`,
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
-      backgroundPosition: "center top"
+      backgroundPosition: "center center"
     };
   }
 };
@@ -51,24 +48,28 @@ const EventsComponent = () => (
   <div style={styles.container}>
     <SubHeader pageName="EVENTS"/>
     <div style={styles.eventsContainer}>
-      <div style={styles.eventBoxFunc("http://static.1989generationinitiative.org/images/landscape_london.png")}>
-        <div className="text">
-          <h2>Launch Conference 2017</h2>
-          <p>The Conference will address the theme of populism with the aim of understanding its origins and appeal. By observing where traditional ruling elites have failed, we look at ways to supplant the rhetoric of fear and hate, with one of hope. Ultimately, the Conference will offer a unique opportunity for interaction and debate between accomplished professionals, policy makers, scholars, and 89ers - young European citizens coming from all over the continent.</p>
-          <Link to="/event">Read more...</Link>
+      <div className="container-fluid">
+        <div className="row" style={styles.eventBoxFunc("http://static.1989generationinitiative.org/images/landscape_london.png")}>
+          <div className="col-sm-8 text">
+            <h2>Launch Conference 2017</h2>
+            <p>The Conference will address the theme of populism with the aim of understanding its origins and appeal. By observing where traditional ruling elites have failed, we look at ways to supplant the rhetoric of fear and hate, with one of hope. Ultimately, the Conference will offer a unique opportunity for interaction and debate between accomplished professionals, policy makers, scholars, and 89ers - young European citizens coming from all over the continent.</p>
+            <Link to="/event">
+              <Button bsStyle="primary">Learn more...</Button>
+            </Link>
+          </div>
         </div>
       </div>
       {events.map((event, index) => (
-        <div key={index}>
-          <div style={styles.eventBoxFunc(event.landscape)}>
-            <div>
-              <a style={styles.downloadLink} target="_blank" href="#"><i className="fa fa-cloud-download"/></a>
-            </div>
-            <div className="text">
+        <div className="container-fluid" key={index}>
+          <div className="row" style={styles.eventBoxFunc(event.landscape)}>
+            <div className="col-sm-8 text">
               <h2>{event.title}</h2>
               {event.text.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
+            </div>
+            <div className="col-sm-4">
+              <a style={styles.downloadLink} target="_blank" href="#"><i className="fa fa-cloud-download"/></a>
             </div>
           </div>
         </div>

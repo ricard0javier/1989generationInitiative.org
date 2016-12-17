@@ -1,4 +1,5 @@
 import React from "react";
+import {Button} from "react-bootstrap";
 
 import SubHeader from './subHeader';
 import Donate from './donate';
@@ -17,7 +18,7 @@ const EventComponent = () => (
     <div className="text" style={styles.eventsContainer}>
 
       <h1>Launch Conference 2017</h1>
-      <img src="http://static.1989generationinitiative.org/images/landscape_london.png"/>
+      <img className="img-responsive" src="http://static.1989generationinitiative.org/images/landscape_london.png"/>
 
       <h2>Introduction</h2>
       <p>The Conference will address the theme of populism with the aim of understanding its origins and appeal. By observing where traditional ruling elites have failed, we look at ways to supplant the rhetoric of fear and hate, with one of hope. Ultimately, the Conference will offer a unique opportunity for interaction and debate between accomplished professionals, policy makers, scholars, and 89ers - young European citizens coming from all over the continent.</p>
@@ -25,7 +26,9 @@ const EventComponent = () => (
       <p>Following the Conference, Webinars will be held to further develop the ideas and ultimately turn them into concrete policy proposals. Finally, these will be presented to high-ranking EU officials, the media, and the wider public in a Presentation Event in autumn 2017 (details to be announced at a later date).</p>
 
       <h2>How to apply</h2>
-      <a target="_blank" href="http://tinyurl.com/TacklingPopulismApplication">Apply now</a>
+      <a target="_blank" href="http://tinyurl.com/TacklingPopulismApplication">
+        <Button bsStyle="primary">Apply now</Button>
+      </a>
       <p>Applications are open from December 7th until January 8th. In order to apply, you need to provide the following:</p>
       <ul>
         <li><span>Some basic personal information</span></li>

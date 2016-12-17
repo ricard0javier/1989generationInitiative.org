@@ -15,3 +15,39 @@ $secondary-color: #02274A;
 body {
   color: $secondary-color;
 }
+
+// Collaborator
+.collaborator {
+  height: 380px
+}
+
+// members
+.member {
+  display: flex;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.member-text {
+  padding: 5px;
+  width: 50%;
+  height: 100%;
+  text-align: left;
+}
+
+.member.reverse {
+  @extend .member;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.member-text.reverse {
+  @extend .member-text;
+
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+}
