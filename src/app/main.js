@@ -5,7 +5,7 @@ import {createStore} from "redux";
 import HomeComponent from "./view/home";
 import CollaboratorsComponent from "./view/collaborators";
 import EventsComponent from "./view/events";
-import WhoWeAreComponent from "./view/who_we_are";
+import WhoWeAreComponent from "./view/whoWeAre";
 import ChaptersComponent from "./view/chapters";
 import ContactComponent from "./view/contact";
 import EventComponent from "./view/event";
