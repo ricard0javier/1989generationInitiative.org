@@ -6,7 +6,7 @@ import thunk from "redux-thunk";
 import HomeComponent from "./view/home";
 import CollaboratorsComponent from "./view/collaborators";
 import EventsComponent from "./view/events";
-import WhoWeAreContainer from "./controller/container/WhoWeAreContainer";
+import WhoWeAreContainer from "./controller/container/whoWeAreContainer";
 import ChaptersComponent from "./view/chapters";
 import ContactComponent from "./view/contact";
 import EventComponent from "./view/event";

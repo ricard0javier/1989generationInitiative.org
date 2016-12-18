@@ -1,6 +1,6 @@
 import React from "react";
 
-import SubHeader from './subHeader';
+import {SubHeaderComponent} from './subHeader';
 
 const collaborators = [
   {
@@ -39,7 +39,7 @@ const collaborators = [
 
 const CollaboratorsComponent = () => (
   <div>
-    <SubHeader pageName="COLLABORATORS"/>
+    <SubHeaderComponent pageName="COLLABORATORS"/>
     <div className="row">
       {collaborators.map((collaborator, index) => (
         <div key={index} className="collaborator col-sm-3">

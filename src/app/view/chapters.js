@@ -1,5 +1,5 @@
 import React from "react";
-import SubHeader from "./subHeader";
+import SubHeader from './subHeader';
 
 const ChaptersComponent = () => (
   <div>
