@@ -1,5 +1,9 @@
 import {combineReducers} from "redux";
 
-const reducers = combineReducers({});
+import whoWeAreReducer from "./whoWeAreReducer";
+
+const reducers = combineReducers({
+  teams: whoWeAreReducer
+});
 
 export default reducers;
