@@ -22,7 +22,7 @@ Development Notes
 Requirements:
 -------------
 * node v6.4.0
-* npm 3.10.7
+* npm 3.10.9
 * AWS credentials file in '~/.aws/credentials'
 ```
 [default]
