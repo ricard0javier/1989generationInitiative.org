@@ -1,7 +1,7 @@
 import React from "react";
 import {Button} from "react-bootstrap";
 
-import SubHeader from './subheader';
+import SubHeader from './subHeader';
 import Donate from './donate';
 
 const styles = {

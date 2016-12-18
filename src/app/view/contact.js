@@ -1,5 +1,5 @@
 import React from "react";
-import SubHeader from "./subheader";
+import SubHeader from './subHeader';
 
 const ContactComponent = () => (
   <div>
