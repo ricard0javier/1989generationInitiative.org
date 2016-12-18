@@ -1,4 +1,4 @@
-![Build Status][6]
+[![Build Status][6]][7]
 
 1989 Generation Initiative ([website link][2])
 ==========================
@@ -67,3 +67,4 @@ TODO:
 [4]: https://github.com/ricard0javier/1989generationInitiative.org/tree/dev
 [5]: https://github.com/ricard0javier/1989generationInitiative.org/wiki
 [6]: https://travis-ci.org/ricard0javier/1989generationInitiative.org.svg?branch=master
+[7]: https://travis-ci.org/ricard0javier/1989generationInitiative.org
