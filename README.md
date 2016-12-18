@@ -14,6 +14,7 @@ Both branches have an equivalent URL to the deployed website, so it is possible 
 - dev - [http://dev.1989generationinitiative.org][1]
 - master - [http://www.1989generationinitiative.org][2]
 
+Find more information about how to work within the Website project on the [Wiki][5]
 
 Development Notes
 =================
@@ -62,3 +63,4 @@ TODO:
 [2]: http://www.1989generationinitiative.org
 [3]: https://github.com/ricard0javier/1989generationInitiative.org
 [4]: https://github.com/ricard0javier/1989generationInitiative.org/tree/dev
+[5]: https://github.com/ricard0javier/1989generationInitiative.org/wiki
