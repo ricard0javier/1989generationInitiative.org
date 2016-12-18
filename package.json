@@ -13,6 +13,11 @@
     "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
+    "@types/axios": "^0.9.32",
+    "@types/react": "^0.14.39",
+    "@types/react-addons-test-utils": "^0.14.15",
+    "@types/react-dom": "^0.14.17",
+    "@types/react-router": "^2.0.37",
     "autoprefixer": "^6.2.2",
     "babel-core": "^6.13.0",
     "babel-eslint": "^6.0.2",
@@ -63,6 +68,7 @@
     "url-loader": "^0.5.7",
     "webpack": "^2.1.0-beta.27",
     "webpack-dev-middleware": "^1.4.0",
+    "webpack-fail-plugin": "^1.0.5",
     "webpack-hot-middleware": "^2.6.0"
   },
   "scripts": {
