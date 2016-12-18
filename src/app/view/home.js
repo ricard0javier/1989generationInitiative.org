@@ -1,6 +1,6 @@
 import React from "react";
 
-import SubHeaderComponent from './subHeader.js';
+import SubHeaderComponent from './subheader';
 import LinkButton from './link_button';
 
 const styles = {

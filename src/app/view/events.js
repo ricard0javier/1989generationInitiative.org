@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router";
 import {Button} from "react-bootstrap";
 
-import SubHeader from './subHeader';
+import SubHeader from './subheader';
 
 const styles = {
   eventsContainer: {
