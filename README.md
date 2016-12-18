@@ -1,3 +1,5 @@
+![Build Status][6]
+
 1989 Generation Initiative ([website link][2])
 ==========================
 We are an open policy network committed to mobilising young Europeans; or '89ers', to lead the long term regeneration of the European Project through the development of innovative policy proposals.
@@ -64,3 +66,4 @@ TODO:
 [3]: https://github.com/ricard0javier/1989generationInitiative.org
 [4]: https://github.com/ricard0javier/1989generationInitiative.org/tree/dev
 [5]: https://github.com/ricard0javier/1989generationInitiative.org/wiki
+[6]: https://travis-ci.org/ricard0javier/1989generationInitiative.org.svg?branch=master
