@@ -89,5 +89,11 @@
       "xo-react/space",
       "xo-space/esnext"
     ]
-  }
+  },
+  "name": "1989generationInitiative.org",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ricard0javier/1989generationInitiative.org.git",
+  "author": "Ricardo Villanueva <villanueva.ricardo@gmail.com>",
+  "license": "MIT"
 }
