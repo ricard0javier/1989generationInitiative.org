@@ -1,5 +1,5 @@
 import React from "react";
-import {Router, Route, browserHistory, IndexRedirect} from "react-router";
+import {Router, Route, browserHistory, IndexRedirect, Redirect} from "react-router";
 import {Provider} from "react-redux";
 import {createStore, applyMiddleware} from "redux";
 import thunk from "redux-thunk";
@@ -37,6 +37,7 @@ const Main = () => (
         <Route path="chapters" component={ChaptersComponent}/>
         <Route path="contact" component={ContactComponent}/>
         <Route path="event" component={EventComponent}/>
+        <Redirect path="*" to="/"/>
       </Route>
     </Router>
   </Provider>
