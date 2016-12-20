@@ -2,7 +2,7 @@ import React from "react";
 import {Button} from "react-bootstrap";
 
 import SubHeader from './subHeader';
-import Donate from './donate';
+import Donate from './Donate';
 
 const styles = {
   eventsContainer: {
