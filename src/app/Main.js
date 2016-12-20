@@ -10,7 +10,7 @@ import WhoWeAreContainer from "./controller/container/whoWeAreContainer";
 import EventComponent from "./view/event";
 import reducers from "./controller/reducer";
 import TilesContainer from "./controller/container/tiles-container";
-import {handlePageView} from './utils/analytis';
+import {handlePageView} from './utils/analytics';
 import {fetchTeams} from './controller/action/whoWeAreActions';
 
 const store = createStore(

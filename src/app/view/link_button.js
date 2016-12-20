@@ -1,7 +1,7 @@
 import React, {PropTypes} from "react";
 import {Button} from "react-bootstrap";
 
-import {handleClick} from '../utils/analytis';
+import {handleClick} from '../utils/analytics';
 
 const styles = {
   linkButton: {
