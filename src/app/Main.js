@@ -7,8 +7,6 @@ import HomeComponent from "./view/home";
 import CollaboratorsComponent from "./view/collaborators";
 import EventsComponent from "./view/events";
 import WhoWeAreContainer from "./controller/container/whoWeAreContainer";
-import ChaptersComponent from "./view/chapters";
-import ContactComponent from "./view/contact";
 import EventComponent from "./view/event";
 import reducers from "./controller/reducer";
 import TilesContainer from "./controller/container/tiles-container";
@@ -34,8 +32,6 @@ const Main = () => (
         <Route path="collaborators" component={CollaboratorsComponent}/>
         <Route path="events" component={EventsComponent}/>
         <Route path="who_we_are" component={WhoWeAreContainer} onEnter={handleFetchTeams}/>
-        <Route path="chapters" component={ChaptersComponent}/>
-        <Route path="contact" component={ContactComponent}/>
         <Route path="event" component={EventComponent}/>
         <Redirect path="*" to="/"/>
       </Route>
