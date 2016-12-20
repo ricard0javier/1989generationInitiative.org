@@ -4,7 +4,7 @@ import {Provider} from "react-redux";
 import {createStore, applyMiddleware} from "redux";
 import thunk from "redux-thunk";
 import HomeComponent from "./view/home";
-import CollaboratorsComponent from "./view/collaborators";
+import CollaboratorsComponent from "./view/Collaborators";
 import EventsComponent from "./view/events";
 import WhoWeAreContainer from "./controller/container/whoWeAreContainer";
 import EventComponent from "./view/event";
