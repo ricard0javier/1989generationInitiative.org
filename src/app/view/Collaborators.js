@@ -1,6 +1,6 @@
 import React from "react";
 
-import {SubHeaderComponent} from './SubHeader';
+import SubHeaderComponent from './SubHeader';
 
 const collaborators = [
   {
