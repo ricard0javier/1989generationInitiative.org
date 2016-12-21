@@ -1,6 +1,6 @@
 import React, {PropTypes} from "react";
 import {Image} from "react-bootstrap";
-import SubHeader from './subHeader';
+import SubHeader from './SubHeader';
 
 const styles = {
   teamContainer: {
