@@ -6,7 +6,7 @@ import thunk from "redux-thunk";
 import HomeComponent from "./view/Home";
 import CollaboratorsComponent from "./view/Collaborators";
 import EventsComponent from "./view/Events";
-import WhoWeAreContainer from "./controller/container/whoWeAreContainer";
+import AboutContainer from "./controller/container/aboutContainer";
 import EventComponent from "./view/Event";
 import reducers from "./controller/reducer";
 import TemplateContainer from "./controller/container/templateContainer";
@@ -31,7 +31,7 @@ const Main = () => (
         <Route path="home" component={HomeComponent}/>
         <Route path="collaborators" component={CollaboratorsComponent}/>
         <Route path="events" component={EventsComponent}/>
-        <Route path="who_we_are" component={WhoWeAreContainer} onEnter={handleFetchTeams}/>
+        <Route path="who_we_are" component={AboutContainer} onEnter={handleFetchTeams}/>
         <Route path="event" component={EventComponent}/>
         <Redirect path="*" to="/"/>
       </Route>
