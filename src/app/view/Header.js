@@ -1,6 +1,6 @@
 import React from "react";
 import {Navbar, Nav} from "react-bootstrap";
-import {NavLink} from "./navLink";
+import {NavLink} from "./NavLink";
 
 const styles = {
   list: {
