@@ -1,7 +1,7 @@
 import React from "react";
 
 import SubHeaderComponent from './subHeader';
-import LinkButton from './link_button';
+import LinkButton from './LinkButton';
 
 const styles = {
   iconBox: {
