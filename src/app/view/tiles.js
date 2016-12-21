@@ -21,7 +21,7 @@ const styles = {
 const Tiles = ({children}) => {
   return (
     <div className="container-fluid" style={styles.container}>
-      <HeaderResponsive/>
+      <Header/>
       {children}
       <Footer/>
     </div>
