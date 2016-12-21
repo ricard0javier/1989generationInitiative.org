@@ -7,7 +7,7 @@ import HomeComponent from "./view/home";
 import CollaboratorsComponent from "./view/Collaborators";
 import EventsComponent from "./view/events";
 import WhoWeAreContainer from "./controller/container/whoWeAreContainer";
-import EventComponent from "./view/event";
+import EventComponent from "./view/Event";
 import reducers from "./controller/reducer";
 import TilesContainer from "./controller/container/tiles-container";
 import {handlePageView} from './utils/analytics';
