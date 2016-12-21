@@ -31,7 +31,7 @@ const Main = () => (
         <Route path="home" component={HomeComponent}/>
         <Route path="collaborators" component={CollaboratorsComponent}/>
         <Route path="events" component={EventsComponent}/>
-        <Route path="who_we_are" component={AboutContainer} onEnter={handleFetchTeams}/>
+        <Route path="about" component={AboutContainer} onEnter={handleFetchTeams}/>
         <Route path="event" component={EventComponent}/>
         <Redirect path="*" to="/"/>
       </Route>
