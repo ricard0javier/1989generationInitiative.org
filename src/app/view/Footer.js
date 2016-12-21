@@ -1,6 +1,6 @@
 import React from "react";
 
-import HeaderResponsive from './headerResponsive';
+import Header from './Header';
 
 const styles = {
   container: {

@@ -19,7 +19,7 @@ const styles = {
   }
 };
 
-const HeaderResponsive = () => (
+const Header = () => (
   <div style={styles.header}>
     <Navbar>
       <Navbar.Header>
@@ -53,4 +53,4 @@ const HeaderResponsive = () => (
   </div>
 );
 
-export default HeaderResponsive;
+export default Header;
