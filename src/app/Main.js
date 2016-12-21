@@ -9,7 +9,7 @@ import EventsComponent from "./view/Events";
 import WhoWeAreContainer from "./controller/container/whoWeAreContainer";
 import EventComponent from "./view/Event";
 import reducers from "./controller/reducer";
-import TilesContainer from "./controller/container/tiles-container";
+import TemplateContainer from "./controller/container/templateContainer";
 import {handlePageView} from './utils/analytics';
 import {fetchTeams} from './controller/action/whoWeAreActions';
 
@@ -26,7 +26,7 @@ const handleFetchTeams = () => store.dispatch(fetchTeams());
 const Main = () => (
   <Provider store={store}>
     <Router history={browserHistory} onUpdate={handlePageView}>
-      <Route path="/" component={TilesContainer}>
+      <Route path="/" component={TemplateContainer}>
         <IndexRedirect to="/home"/>
         <Route path="home" component={HomeComponent}/>
         <Route path="collaborators" component={CollaboratorsComponent}/>
