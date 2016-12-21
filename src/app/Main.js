@@ -3,7 +3,7 @@ import {Router, Route, browserHistory, IndexRedirect, Redirect} from "react-rout
 import {Provider} from "react-redux";
 import {createStore, applyMiddleware} from "redux";
 import thunk from "redux-thunk";
-import HomeComponent from "./view/home";
+import HomeComponent from "./view/Home";
 import CollaboratorsComponent from "./view/Collaborators";
 import EventsComponent from "./view/Events";
 import WhoWeAreContainer from "./controller/container/whoWeAreContainer";
