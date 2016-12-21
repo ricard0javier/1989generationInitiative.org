@@ -1,6 +1,6 @@
 import React, {PropTypes} from "react";
 import HeaderResponsive from "./headerResponsive";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 const styles = {
   container: {
