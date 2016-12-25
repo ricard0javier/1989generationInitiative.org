@@ -8,16 +8,16 @@ import CollaboratorsComponent from "./view/Collaborators";
 import EventsComponent from "./view/Events";
 import AboutContainer from "./controller/container/aboutContainer";
 import EventComponent from "./view/Event";
-import reducers from "./controller/reducer";
+import reducer from "./controller/modules/reducer";
 import TemplateContainer from "./controller/container/templateContainer";
 import {handlePageView} from './utils/analytics';
-import {fetchTeams} from './controller/action/whoWeAreActions';
+import {loadTeams} from './controller/modules/teams';
 
 const store = createStore(
-  reducers,
+  reducer,
   applyMiddleware(thunk));
 
-const handleFetchTeams = () => store.dispatch(fetchTeams());
+const handleLoadTeams = () => store.dispatch(loadTeams());
 /**
 * Configures the application with:
 * - Redux (<Provider/>)
@@ -31,7 +31,7 @@ const Main = () => (
         <Route path="home" component={HomeComponent}/>
         <Route path="collaborators" component={CollaboratorsComponent}/>
         <Route path="events" component={EventsComponent}/>
-        <Route path="about" component={AboutContainer} onEnter={handleFetchTeams}/>
+        <Route path="about" component={AboutContainer} onEnter={handleLoadTeams}/>
         <Route path="event" component={EventComponent}/>
         <Redirect path="*" to="/"/>
       </Route>
