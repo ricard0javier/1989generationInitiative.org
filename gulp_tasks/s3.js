@@ -17,9 +17,9 @@ gulp.task('cloneS3BucketContent', done => {
   const fromBucketName = util.env.fromBucketName;
   const toBucketName = util.env.toBucketName;
 
-  cleanBucket(toBucketName);
-  const objects = getObjects(fromBucketName);
-  copyObjects(objects, fromBucketName, toBucketName);
+  cleanBucket(toBucketName).
+    then(data => getObjects(fromBucketName)).
+    then(objects => copyObjects(objects, fromBucketName, toBucketName));
 
   done();
 });
@@ -29,21 +29,21 @@ gulp.task('cloneS3BucketContent', done => {
  */
 const getObjects = bucketName => {
 
-  const objects = [];
-
   console.log(`getting list of objects in the bucket '${bucketName}'`);
   // retrieve all objects
-  const listPromise = s3.listObjects({Bucket: bucketName}).promise();
 
-  listPromise.then(data => {
-    data.Contents.map(object => {
-      objects.push(object.Key);
+  const flatObjects = data => {
+    return new Promise((resolve, reject) => {
+      const objects = [];
+      data.Contents.map(object => {
+        objects.push(object.Key);
+      });
+      resolve(objects);
     });
-  }).catch((error) => {
-    console.log(error);
-  });
+  };
 
-  return objects;
+  const listPromise = s3.listObjects({Bucket: bucketName}).promise();
+  return listPromise.then(data => flatObjects(data));
 };
 
 /**
@@ -51,15 +51,21 @@ const getObjects = bucketName => {
  */
 const cleanBucket = bucketName => {
 
-  const objects = [];
+  const mapObjects = data => {
+    return new Promise((resolve, reject) => {
+      const objects = [];
+      data.map(object => {
+        objects.push({Key: object});
+        console.log(`Object '${object}' marked for deletion`);
+      });
+      resolve(objects);
+    });
+  };
 
-  getObjects(bucketName).map(object => {
-    objects.push({Key: object});
-    console.log(`Object '${object.Key}' marked for deletion`);
-  });
+  return getObjects(bucketName)
+    .then(data => mapObjects(data))
+    .then(objects => deleteObjects(bucketName, objects));
 
-  // delete them
-  deleteObjects(bucketName, objects);
 };
 
 /**
@@ -70,13 +76,10 @@ const cleanBucket = bucketName => {
 const deleteObjects = (bucketName, objects) => {
   if (objects.length === 0) {
     console.log("There are not objects to delete");
-    return;
+    return Promise.resolve();
   }
   console.log(`deleting objects from the bucket '${bucketName}'`);
-  const promise = s3.deleteObjects({Bucket: bucketName, Delete: {Objects: objects}}).promise();
-  promise.then(() => {
-    console.log(`${objects.length} elements deleted`)
-  });
+  return s3.deleteObjects({Bucket: bucketName, Delete: {Objects: objects}}).promise();
 };
 
 /**
@@ -86,10 +89,6 @@ const deleteObjects = (bucketName, objects) => {
  * @param toBucketName
  */
 const copyObjects = (objects, fromBucketName, toBucketName) => {
-  if (objects.length === 0) {
-    console.log("There are not objects to copy");
-    return;
-  }
   objects.map(key => {
     const copySource = `${fromBucketName}/${key}`;
     const copyPromise = s3.copyObject({Bucket: toBucketName, Key: key, CopySource: copySource}).promise();

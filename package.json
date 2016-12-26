@@ -78,8 +78,8 @@
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
-    "deploy": "npm run cleanS3Bucket && s3-deploy './dist/**' --cwd './dist' --signatureVersion v4 --bucket dev.1989generationinitiative.org --gzip --cache 31536000",
-    "cleanS3Bucket": "gulp cleanS3Bucket --bucketName dev.1989generationinitiative.org"
+    "deploy": "gulp && gulp cleanS3Bucket --bucketName dev.1989generationinitiative.org && s3-deploy './dist/**' --cwd './dist' --signatureVersion v4 --bucket dev.1989generationinitiative.org --gzip --cache 31536000",
+    "promoteToLive": "gulp cloneS3BucketContent --fromBucketName dev.1989generationinitiative.org --toBucketName www.1989generationinitiative.org",
   },
   "eslintConfig": {
     "root": true,
