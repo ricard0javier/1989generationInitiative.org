@@ -8,15 +8,12 @@ AWS.config.update({
 
 const s3 = new AWS.S3();
 
-gulp.task('cleanS3Bucket', cleanS3BucketTask);
-gulp.task('cloneS3BucketContent', cloneS3BucketContentTask);
-
-function cleanS3BucketTask(done) {
+gulp.task('cleanS3Bucket', done => {
   cleanBucket(util.env.bucketName);
   done();
-}
+});
 
-function cloneS3BucketContentTask(done) {
+gulp.task('cloneS3BucketContent', done => {
   const fromBucketName = util.env.fromBucketName;
   const toBucketName = util.env.toBucketName;
 
@@ -25,12 +22,12 @@ function cloneS3BucketContentTask(done) {
   copyObjects(objects, fromBucketName, toBucketName);
 
   done();
-}
+});
 
 /**
  * Delete all the S3 Bucket objects contained on the argv[bucketName] bucket
  */
-function getObjects(bucketName) {
+const getObjects = bucketName => {
 
   const objects = [];
 
@@ -47,12 +44,12 @@ function getObjects(bucketName) {
   });
 
   return objects;
-}
+};
 
 /**
  * Deletes all the S3 Bucket objects contained on the a given bucket
  */
-function cleanBucket(bucketName) {
+const cleanBucket = bucketName => {
 
   const objects = [];
 
@@ -63,7 +60,7 @@ function cleanBucket(bucketName) {
 
   // delete them
   deleteObjects(bucketName, objects);
-}
+};
 
 /**
  * Deletes objects from the bucket
