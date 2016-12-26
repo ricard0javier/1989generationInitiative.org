@@ -1,6 +1,6 @@
 import React, {PropTypes} from "react";
 import {Image} from "react-bootstrap";
-import SubHeader from './subHeader';
+import SubHeader from './SubHeader';
 
 const styles = {
   teamContainer: {
@@ -21,7 +21,7 @@ const styles = {
   }
 };
 
-const WhoWeAreComponent = ({teams}) => (
+const AboutComponent = ({teams}) => (
   <div>
     <SubHeader pageName="WHO WE ARE"/>
     <div>
@@ -75,7 +75,7 @@ const WhoWeAreComponent = ({teams}) => (
   </div>
 );
 
-WhoWeAreComponent.propTypes = {
+AboutComponent.propTypes = {
   teams: PropTypes.array
 };
 
@@ -92,4 +92,4 @@ SocialLink.propTypes = {
   icon: PropTypes.string.isRequired
 };
 
-export default WhoWeAreComponent;
+export default AboutComponent;

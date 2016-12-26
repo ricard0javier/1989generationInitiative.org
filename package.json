@@ -19,6 +19,7 @@
     "@types/react-dom": "^0.14.17",
     "@types/react-router": "^2.0.37",
     "autoprefixer": "^6.2.2",
+    "aws-sdk": "^2.7.19",
     "babel-core": "^6.13.0",
     "babel-eslint": "^6.0.2",
     "babel-loader": "^6.2.0",
@@ -77,7 +78,8 @@
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
-    "deploy": "s3-deploy './dist/**' --cwd './dist' --signatureVersion v4 --bucket dev.1989generationinitiative.org --gzip --cache 31536000"
+    "deploy": "gulp cleanS3Bucket --bucketName dev.1989generationinitiative.org && s3-deploy './dist/**' --cwd './dist' --signatureVersion v4 --region eu-central-1 --bucket dev.1989generationinitiative.org --gzip --cache 86400",
+    "promoteToLive": "gulp cloneS3BucketContent --fromBucketName dev.1989generationinitiative.org --toBucketName www.1989generationinitiative.org"
   },
   "eslintConfig": {
     "root": true,

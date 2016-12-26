@@ -1,6 +1,6 @@
 import React, {PropTypes} from "react";
-import HeaderResponsive from "./headerResponsive";
-import Footer from "./footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const styles = {
   container: {
@@ -21,7 +21,7 @@ const styles = {
 const Tiles = ({children}) => {
   return (
     <div className="container-fluid" style={styles.container}>
-      <HeaderResponsive/>
+      <Header/>
       {children}
       <Footer/>
     </div>

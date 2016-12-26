@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import WhoWeAreComponent from "../../view/whoWeAre";
+import AboutComponent from "../../view/About";
 
 // transforms the state to component properties
 const mapStateToProps = state => {
@@ -8,6 +8,6 @@ const mapStateToProps = state => {
   };
 };
 
-const WhoWeAreContainer = connect(mapStateToProps)(WhoWeAreComponent);
+const AboutContainer = connect(mapStateToProps)(AboutComponent);
 
-export default WhoWeAreContainer;
+export default AboutContainer;

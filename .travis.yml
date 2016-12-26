@@ -4,16 +4,9 @@ node_js:
 - '6'
 
 script: npm run build
-
-deploy:
-  provider: s3
-  access_key_id: $AWS_ACCESS_KEY_ID
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: dev.1989generationinitiative.org
-  skip_cleanup: true
-  region: eu-central-1
-  local_dir: dist
-  cache_control: max-age=604800
+after_success:
+  - npm run deploy
+  - 'if [ "$TRAVIS_BRANCH" == "master" ]; then npm run promoteToLive; fi'
 
 cache:
   yarn: true

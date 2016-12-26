@@ -1,6 +1,6 @@
 import React from "react";
 
-import {handleDonationClick} from '../utils/analytis';
+import {handleDonationClick} from '../utils/analytics';
 
 const Donate = () => (
   <form action="https://www.paypal.com/cgi-bin/webscr" onSubmit={handleDonationClick} method="post" target="_blank">

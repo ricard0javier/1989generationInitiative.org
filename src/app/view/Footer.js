@@ -1,6 +1,6 @@
 import React from "react";
 
-import HeaderResponsive from './headerResponsive';
+import Header from './Header';
 
 const styles = {
   container: {
@@ -28,7 +28,7 @@ const styles = {
 const Footer = () => (
   <div>
     <div style={styles.container}>
-      <HeaderResponsive/>
+      <Header/>
     </div>
     <div className="container-fluid">
       <div className="row" style={styles.containerBottom}>

@@ -1,6 +1,6 @@
 import React from "react";
 import {Navbar, Nav} from "react-bootstrap";
-import {NavLink} from "./navLink";
+import {NavLink} from "./NavLink";
 
 const styles = {
   list: {
@@ -19,7 +19,7 @@ const styles = {
   }
 };
 
-const HeaderResponsive = () => (
+const Header = () => (
   <div style={styles.header}>
     <Navbar>
       <Navbar.Header>
@@ -32,7 +32,7 @@ const HeaderResponsive = () => (
         <Nav>
           <NavLink eventKey="1" to="/home" value="Home"/>
           <NavLink eventKey="2" to="/events" value="Events"/>
-          <NavLink eventKey="3" to="/who_we_are" value="Who We Are"/>
+          <NavLink eventKey="3" to="/about" value="Who We Are"/>
           <NavLink eventKey="4" to="/collaborators" value="Collaborators"/>
         </Nav>
         <Nav>
@@ -53,4 +53,4 @@ const HeaderResponsive = () => (
   </div>
 );
 
-export default HeaderResponsive;
+export default Header;

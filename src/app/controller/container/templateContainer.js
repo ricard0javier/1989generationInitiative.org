@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import Tiles from "../../view/tiles";
+import Tiles from "../../view/Template";
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -7,6 +7,6 @@ const mapStateToProps = (state, ownProps) => {
   };
 };
 
-const TilesContainer = connect(mapStateToProps)(Tiles);
+const TemplateContainer = connect(mapStateToProps)(Tiles);
 
-export default TilesContainer;
+export default TemplateContainer;
