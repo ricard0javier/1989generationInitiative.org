@@ -6,9 +6,7 @@ node_js:
 script: npm run build
 after_success: npm run deploy
 after_script:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    npm run promoteToLive
-    fi
+  - 'if [ "$TRAVIS_BRANCH" == "master" ]; then npm run promoteToLive; fi'
 
 cache:
   yarn: true
