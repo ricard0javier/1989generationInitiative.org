@@ -10,6 +10,7 @@ import AboutContainer from "./controller/container/aboutContainer";
 import EventComponent from "./view/Event";
 import reducer from "./controller/modules/reducer";
 import TemplateContainer from "./controller/container/templateContainer";
+import EditTeamsContainer from "./controller/container/editTeamsContainer";
 import {handlePageView} from './utils/analytics';
 import {loadTeams} from './controller/modules/teams';
 
@@ -33,6 +34,7 @@ const Main = () => (
         <Route path="events" component={EventsComponent}/>
         <Route path="about" component={AboutContainer} onEnter={handleLoadTeams}/>
         <Route path="event" component={EventComponent}/>
+        <Route path="admin" component={EditTeamsContainer} onEnter={handleLoadTeams}/>
         <Redirect path="*" to="/"/>
       </Route>
     </Router>
