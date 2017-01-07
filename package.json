@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "auth0-lock": "^10.8.1",
     "axios": "^0.9.1",
     "font-awesome": "FortAwesome/Font-Awesome#179c519ae92af4c35c7b151e973955e83044bdfd",
     "react": "^15.0.1",
@@ -10,7 +11,8 @@
     "react-router": "^2.4.0",
     "react-router-bootstrap": "^0.23.1",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "reselect": "^2.5.4"
   },
   "devDependencies": {
     "@types/axios": "^0.9.32",

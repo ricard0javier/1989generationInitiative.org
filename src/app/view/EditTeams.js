@@ -1,6 +1,7 @@
 import React, {PropTypes} from "react";
-import {Button, Col, ControlLabel, Form, FormControl, FormGroup, Image, Panel, PanelGroup} from "react-bootstrap";
+import {Button} from "react-bootstrap";
 import SubHeader from './SubHeader';
+import EditMemberContainer from '../controller/container/editMemberContainer';
 
 const styles = {
   teamContainer: {
@@ -21,81 +22,41 @@ const styles = {
   }
 };
 
-const title = name => <h3>{name}</h3>;
+const EditTeamsComponent = ({teams, handleEditMember}) => {
+  const open = member => () => {
+    handleEditMember(member.name, member.description, member.linkedin, member.twitter, member.image);
+  };
 
-const FieldGroup = ({id, label, type, placeHolder, value}) => (
-  <FormGroup controlId={id}>
-    <Col componentClass={ControlLabel} sm={2}>
-      {label}
-    </Col>
-    <Col sm={10}>
-      <FormControl type={type} placeholder={placeHolder} value={value}/>
-    </Col>
-  </FormGroup>
-);
-
-FieldGroup.propTypes = {
-  id: PropTypes.string,
-  label: PropTypes.string,
-  type: PropTypes.string,
-  placeHolder: PropTypes.string,
-  value: PropTypes.string
-};
-
-const handleSave = event => {
-  event.preventDefault();
-  console.log(event);
-};
-
-const EditTeamsComponent = ({teams}) => (
-  <div>
-    <SubHeader pageName="ADMIN - TEAMS"/>
+  return (
     <div>
-      <PanelGroup defaultActiveKey="1" accordion>
-        {teams.map((team, teamIndex) => {
-          return (
-            <Panel key={teamIndex} eventKey={teamIndex} bsStyle="primary" header={title(team.name)}>
-              {team.members.map((member, memberIndex) => {
-                return (
-                  <PanelGroup key={memberIndex} accordion>
-                    <Panel eventKey={memberIndex} bsStyle="success" header={title(member.name)}>
-                      <Form horizontal>
-                        <FieldGroup id="name" label="Full Name" type="text" placeHolder="Full Name" value={member.name}/>
-                        <FieldGroup id="description" label="Description" type="text" placeHolder="Position description" value={member.description}/>
-                        <FieldGroup id="linkedin" label="Linkein" type="url" placeHolder="Linkedin URL" value={member.linkedin}/>
-                        <FieldGroup id="twitter" label="Twitter" type="url" placeHolder="Twitter URL" value={member.twitter}/>
-                        <FieldGroup id="image" label="Image" type="url" placeHolder="Image URL" value={member.image}/>
-                        <Image src={member.image} rounded/>
-
-                        <FormGroup>
-                          <Col smOffset={2} sm={1}>
-                            <Button type="submit" onClick={handleSave}>
-                              Save
-                            </Button>
-                          </Col>
-                          <Col sm={1}>
-                            <Button type="submit">
-                              Delete
-                            </Button>
-                          </Col>
-                        </FormGroup>
-
-                      </Form>
-                    </Panel>
-                  </PanelGroup>
-                );
-              })}
-              {/* end of member*/}
-            </Panel>
-          );
-        })}
-      </PanelGroup>
+      <SubHeader pageName="ADMIN - TEAMS"/>
+      <div>
+        <EditMemberContainer/>
+          {teams.map((team, teamIndex) => {
+            return (
+              <div key={teamIndex}>
+                {team.members.map((member, memberIndex) => {
+                  return (
+                    <div key={memberIndex}>
+                      <span>{member.name} - {team.name}</span>
+                      <Button onClick={open(member)}>
+                        Edit
+                      </Button>
+                    </div>
+                  );
+                })}
+                {/* end of member*/}
+              </div>
+            );
+          })}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 EditTeamsComponent.propTypes = {
-  teams: PropTypes.array
+  teams: PropTypes.array,
+  handleEditMember: PropTypes.func
 };
 
 const SocialLink = ({url, icon}) => {
