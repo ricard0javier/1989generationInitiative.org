@@ -10,7 +10,6 @@ import AboutContainer, {initialiseAbout} from "./controller/container/aboutConta
 import EventComponent from "./view/Event";
 import reducer from "./controller/modules/reducer";
 import TemplateContainer from "./controller/container/templateContainer";
-import EditTeamsContainer from "./controller/container/editTeamsContainer";
 import {handlePageView} from './utils/analytics';
 
 const store = createStore(
@@ -32,7 +31,6 @@ const Main = () => (
         <Route path="events" component={EventsComponent}/>
         <Route path="about" component={AboutContainer} onEnter={initialiseAbout(store.dispatch)}/>
         <Route path="event" component={EventComponent}/>
-        <Route path="admin" component={EditTeamsContainer} onEnter={initialiseAbout(store.dispatch)}/>
         <Redirect path="*" to="/"/>
       </Route>
     </Router>
