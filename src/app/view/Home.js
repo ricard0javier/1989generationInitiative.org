@@ -60,7 +60,7 @@ const HomeComponent = () => (
         <h4 className="animated-fade-in-later">HOPE OVER FEAR</h4>
       </div>
       <div>
-        <LinkButton href="http://tinyurl.com/TacklingPopulismApplication" text="Application Form"/>
+        <LinkButton href="http://facebook.com/events/1362902850410939/" text="Facebook Event"/>
         <LinkButton href="http://static.1989generationinitiative.org/docs/Tackling_Populism__Hope_over_Fear.pdf" text="Conference Booklet"/>
       </div>
     </div>
