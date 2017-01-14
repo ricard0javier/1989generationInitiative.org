@@ -33,10 +33,17 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: [
-          'react-hot-loader',
-          'babel-loader'
-        ]
+        loader: 'react-hot-loader'
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query:
+          {
+            presets:['react', 'es2015'],
+            plugins: ["transform-es2015-destructuring", "transform-object-rest-spread"]
+          }
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,

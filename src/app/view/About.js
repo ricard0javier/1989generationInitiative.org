@@ -1,6 +1,8 @@
 import React, {PropTypes} from "react";
 import {Image} from "react-bootstrap";
+
 import SubHeader from './SubHeader';
+import EditMemberContainer from '../controller/container/editMemberContainer';
 
 const styles = {
   teamContainer: {
@@ -21,67 +23,78 @@ const styles = {
   }
 };
 
-const AboutComponent = ({teams}) => (
-  <div>
-    <SubHeader pageName="WHO WE ARE"/>
+const AboutComponent = ({teams, handleEditMember, isLoggedIn}) => {
+  const editMember = member => () => {
+    handleEditMember(member.id, member.name, member.description, member.linkedin, member.teamId, member.twitter, member.image);
+  };
+
+  return (
     <div>
-      {teams.map((teamContainer, teamContainerIndex) => {
-        let memberReverse = false;
-        return (
-          <div key={teamContainerIndex} style={styles.teamContainer}>
-            <h2>{teamContainer.name}</h2>
-            <div className="container-fluid" style={styles.membersContainer}>
-              <div className="row">
+      <SubHeader pageName="WHO WE ARE"/>
+      <div>
+        <EditMemberContainer/>
+        {isLoggedIn && <a onClick={editMember({})}><i className="fa fa-plus">Add Member</i></a>}
+        {teams.map(team => {
+          let memberReverse = false;
+          return (
+            <div key={team.id} style={styles.teamContainer}>
+              <h2>{team.name}</h2>
+              <div className="container-fluid" style={styles.membersContainer}>
+                <div className="row">
+                  {/* members */}
+                  {team.members.map((member, memberIndex) => {
+                    if (memberIndex % 2 === 0) {
+                      memberReverse = !memberReverse;
+                    }
+                    let memberImage = member.image;
+                    if (member.image === undefined) {
+                      memberImage = "http://static.1989generationinitiative.org/images/team_member_default_image.jpg";
+                    }
 
-                {/* members */}
-                {teamContainer.members.map((member, memberIndex) => {
-                  if (memberIndex % 2 === 0) {
-                    memberReverse = !memberReverse;
-                  }
-                  let memberImage = member.image;
-                  if (member.image === undefined) {
-                    memberImage = "http://static.1989generationinitiative.org/images/team_member_default_image.jpg";
-                  }
+                    let memberStyle = "col-sm-6 member";
+                    let memberTextStyle = "member-text";
+                    if (memberReverse) {
+                      memberStyle += " reverse";
+                      memberTextStyle += " reverse";
+                    }
+                    const id = `team-${team.id}_member-${member.id}`;
+                    return (
+                      <div id={id} className={memberStyle} key={member.id}>
+                        <div style={styles.memberImage}>
+                          <Image src={memberImage} responsive/>
+                        </div>
+                        <div className={memberTextStyle}>
+                          <h4>{member.name}</h4>
+                          {isLoggedIn && <a href={`#${id}`} onClick={editMember(member)}><i className="fa fa-pencil">Edit</i></a>}
+                          <p>{member.description}</p>
+                          <SocialLink icon="fa-linkedin-square" url={member.linkedin}/>
+                          <SocialLink icon="fa-twitter" url={member.twitter}/>
+                        </div>
+                      </div>
+                    );
+                  })}
+                  {/* end of member*/}
 
-                  let memberStyle = "col-sm-6 member";
-                  let memberTextStyle = "member-text";
-                  if (memberReverse) {
-                    memberStyle += " reverse";
-                    memberTextStyle += " reverse";
-                  }
-                  return (
-                    <div className={memberStyle} key={memberIndex}>
-                      <div style={styles.memberImage}>
-                        <Image src={memberImage} responsive/>
-                      </div>
-                      <div className={memberTextStyle}>
-                        <h4>{member.name}</h4>
-                        <p>{member.description}</p>
-                        <SocialLink icon="fa-linkedin-square" url={member.linkedin}/>
-                        <SocialLink icon="fa-twitter" url={member.twitter}/>
-                      </div>
-                    </div>
-                  );
-                })}
-                {/* end of member*/}
+                </div>
 
               </div>
-
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 AboutComponent.propTypes = {
-  teams: PropTypes.array
+  teams: PropTypes.array,
+  handleEditMember: PropTypes.func,
+  isLoggedIn: PropTypes.bool.isRequired
 };
 
 const SocialLink = ({url, icon}) => {
   const iconClass = `fa ${icon} fa-2x`;
-  if (url !== undefined) {
+  if (url) {
     return <span><a style={styles.link} target="_blank" href={url}><i className={iconClass}/></a></span>;
   }
   return <span/>;

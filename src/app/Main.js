@@ -6,18 +6,21 @@ import thunk from "redux-thunk";
 import HomeComponent from "./view/Home";
 import CollaboratorsComponent from "./view/Collaborators";
 import EventsComponent from "./view/Events";
-import AboutContainer from "./controller/container/aboutContainer";
+import AboutContainer, {initialiseAbout} from "./controller/container/aboutContainer";
 import EventComponent from "./view/Event";
 import reducer from "./controller/modules/reducer";
 import TemplateContainer from "./controller/container/templateContainer";
 import {handlePageView} from './utils/analytics';
-import {loadTeams} from './controller/modules/teams';
+import {getInstance as initialiseAuth} from "./utils/auth-service";
+import {loggedInAuth, loggedOutAuth} from "./controller/modules/auth";
 
-const store = createStore(
-  reducer,
-  applyMiddleware(thunk));
+const store = createStore(reducer, applyMiddleware(thunk));
 
-const handleLoadTeams = () => store.dispatch(loadTeams());
+// initialise authentication mechanism
+const loginHandler = tokenId => store.dispatch(loggedInAuth(tokenId));
+const logoutHandler = () => store.dispatch(loggedOutAuth());
+initialiseAuth(loginHandler, logoutHandler);
+
 /**
 * Configures the application with:
 * - Redux (<Provider/>)
@@ -31,7 +34,7 @@ const Main = () => (
         <Route path="home" component={HomeComponent}/>
         <Route path="collaborators" component={CollaboratorsComponent}/>
         <Route path="events" component={EventsComponent}/>
-        <Route path="about" component={AboutContainer} onEnter={handleLoadTeams}/>
+        <Route path="about" component={AboutContainer} onEnter={initialiseAbout(store.dispatch)}/>
         <Route path="event" component={EventComponent}/>
         <Redirect path="*" to="/"/>
       </Route>
