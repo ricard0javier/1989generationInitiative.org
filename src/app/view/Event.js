@@ -2,6 +2,7 @@ import React from "react";
 
 import SubHeader from './SubHeader';
 import Donate from './Donate';
+import LinkButton from './LinkButton';
 
 const styles = {
   eventsContainer: {
@@ -30,6 +31,8 @@ const EventComponent = () => (
       <h2>How to apply</h2>
       <p>Applications have now closed. If you wish to contribute to our policy cycle, we encourage you to join one of our Regional Chapters. They also engage in policy making, continuing the work of the Conference, and also organise events independently.
       There are currently three fully established Chapters (Austria, Belgium, Slovakia) and two in the early stages (Portugal, Scotland). </p>
+
+      <LinkButton href="http://goo.gl/forms/TjTRAzW79fP3MpQw2" text="Become a Member"/>
 
       <h3>Selection Process</h3>
       <p>Selection will be based solely on merit; no first-come-first-serve principle.</p>
