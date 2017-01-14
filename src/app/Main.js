@@ -11,10 +11,15 @@ import EventComponent from "./view/Event";
 import reducer from "./controller/modules/reducer";
 import TemplateContainer from "./controller/container/templateContainer";
 import {handlePageView} from './utils/analytics';
+import {getInstance as initialiseAuth} from "./utils/auth-service";
+import {loggedInAuth, loggedOutAuth} from "./controller/modules/auth";
 
-const store = createStore(
-  reducer,
-  applyMiddleware(thunk));
+const store = createStore(reducer, applyMiddleware(thunk));
+
+// initialise authentication mechanism
+const loginHandler = tokenId => store.dispatch(loggedInAuth(tokenId));
+const logoutHandler = () => store.dispatch(loggedOutAuth());
+initialiseAuth(loginHandler, logoutHandler);
 
 /**
 * Configures the application with:

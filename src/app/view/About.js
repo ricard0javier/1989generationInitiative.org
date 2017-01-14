@@ -23,7 +23,7 @@ const styles = {
   }
 };
 
-const AboutComponent = ({teams, handleEditMember}) => {
+const AboutComponent = ({teams, handleEditMember, isLoggedIn}) => {
   const editMember = member => () => {
     handleEditMember(member.id, member.name, member.description, member.linkedin, member.teamId, member.twitter, member.image);
   };
@@ -33,12 +33,12 @@ const AboutComponent = ({teams, handleEditMember}) => {
       <SubHeader pageName="WHO WE ARE"/>
       <div>
         <EditMemberContainer/>
+        {isLoggedIn && <a onClick={editMember({})}><i className="fa fa-plus">Add Member</i></a>}
         {teams.map(team => {
           let memberReverse = false;
           return (
             <div key={team.id} style={styles.teamContainer}>
               <h2>{team.name}</h2>
-              <a href={`#team-${team.id}`} onClick={editMember({})}><i className="fa fa-plus">Add Member</i></a>
               <div className="container-fluid" style={styles.membersContainer}>
                 <div className="row">
                   {/* members */}
@@ -64,7 +64,8 @@ const AboutComponent = ({teams, handleEditMember}) => {
                           <Image src={memberImage} responsive/>
                         </div>
                         <div className={memberTextStyle}>
-                          <h4><a href={`#${id}`} onClick={editMember(member)}><i className="fa fa-pencil">{member.name}</i></a></h4>
+                          <h4>{member.name}</h4>
+                          {isLoggedIn && <a href={`#${id}`} onClick={editMember(member)}><i className="fa fa-pencil">Edit</i></a>}
                           <p>{member.description}</p>
                           <SocialLink icon="fa-linkedin-square" url={member.linkedin}/>
                           <SocialLink icon="fa-twitter" url={member.twitter}/>
@@ -87,7 +88,8 @@ const AboutComponent = ({teams, handleEditMember}) => {
 
 AboutComponent.propTypes = {
   teams: PropTypes.array,
-  handleEditMember: PropTypes.func
+  handleEditMember: PropTypes.func,
+  isLoggedIn: PropTypes.bool.isRequired
 };
 
 const SocialLink = ({url, icon}) => {

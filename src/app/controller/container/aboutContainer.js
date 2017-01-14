@@ -39,7 +39,8 @@ const nestedTeamsSelector = createSelector(
 // transforms the state to component properties
 const mapStateToProps = state => {
   return {
-    teams: nestedTeamsSelector(state)
+    teams: nestedTeamsSelector(state),
+    isLoggedIn: state.auth.tokenId !== ""
   };
 };
 

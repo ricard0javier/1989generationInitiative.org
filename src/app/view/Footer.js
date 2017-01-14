@@ -1,4 +1,5 @@
-import React from "react";
+import React, {PropTypes} from "react";
+import {Button} from "react-bootstrap";
 
 import Header from './Header';
 
@@ -25,7 +26,7 @@ const styles = {
 * Renders a Footer div element which contains:
 * - The author name linking to the Linkedin profile
 */
-const Footer = () => (
+const Footer = ({loginText, handleLogin}) => (
   <div>
     <div style={styles.container}>
       <Header/>
@@ -38,6 +39,7 @@ const Footer = () => (
           <span>London School of Economics</span><br/>
           <span>and Political Science</span><br/>
           <span>London WC2A 2AE</span><br/>
+          <Button bsStyle="primary" onClick={handleLogin}>{loginText}</Button>
         </div>
         <div className="col-sm-4">
           <img className="img-responsive" src="http://static.1989generationinitiative.org/images/logo_european_institute.png"/>
@@ -46,5 +48,10 @@ const Footer = () => (
     </div>
   </div>
 );
+
+Footer.propTypes = {
+  loginText: PropTypes.string,
+  handleLogin: PropTypes.func.isRequired
+};
 
 export default Footer;
