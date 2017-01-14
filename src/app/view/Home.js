@@ -2,6 +2,7 @@ import React from "react";
 
 import SubHeaderComponent from './SubHeader';
 import LinkButton from './LinkButton';
+import Donate from './Donate';
 
 const styles = {
   iconBox: {
@@ -62,6 +63,13 @@ const HomeComponent = () => (
         <LinkButton href="http://tinyurl.com/TacklingPopulismApplication" text="Application Form"/>
         <LinkButton href="http://static.1989generationinitiative.org/docs/Tackling_Populism__Hope_over_Fear.pdf" text="Conference Booklet"/>
       </div>
+    </div>
+
+    {/* Donation */}
+    <div className="text">
+      <h2>Donations</h2>
+      <p>In order to cover the travel costs of experts attending the Conference and to facilitate the general logistics of the event, we are depending on your generosity. We encourage you to consider a donation within your means.</p>
+      <Donate/>
     </div>
 
     {/* Defining icons boxes */}
