@@ -26,7 +26,6 @@ const EventComponent = () => (
 
       <h2>Donations</h2>
       <p>In order to cover the travel costs of experts attending the Conference and to facilitate the general logistics of the event, we are depending on your generosity. We encourage you to consider a donation within your means.</p>
-      <Donate/>
 
       <h2>How to apply</h2>
       <p>Applications have now closed. If you wish to contribute to our policy cycle, we encourage you to join one of our Regional Chapters. They also engage in policy making, continuing the work of the Conference, and also organise events independently.
