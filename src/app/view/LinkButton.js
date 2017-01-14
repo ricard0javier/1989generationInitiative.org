@@ -19,18 +19,22 @@ const styles = {
   }
 };
 
-const LinkButton = ({href, text}) => (
-  <a style={styles.link} href={href} onClick={handleClick(href)} target="_blank">
-    <Button bsStyle="primary" style={styles.linkButton}>
-      <div style={styles.linkIcon}><i className="fa fa-download"/></div>
-      <div><span>{text}</span></div>
-    </Button>
-  </a>
-);
+const LinkButton = ({href, text, faIconClass}) => {
+  const finalFaIconClass = faIconClass || "fa fa-download";
+  return (
+    <a style={styles.link} href={href} onClick={handleClick(href)} target="_blank">
+      <Button bsStyle="primary" style={styles.linkButton}>
+        <div style={styles.linkIcon}><i className={finalFaIconClass}/></div>
+        <div><span>{text}</span></div>
+      </Button>
+    </a>
+  );
+};
 
 LinkButton.propTypes = {
   href: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
+  faIconClass: PropTypes.string.isRequired
 };
 
 export default LinkButton;
