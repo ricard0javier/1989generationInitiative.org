@@ -76,3 +76,20 @@ body {
     text-align: right;
   }
 }
+
+.arrow {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.arrow.reverse {
+  @extend .arrow;
+
+  @media (min-width: 768px) {
+    left: 0;
+    right: auto;
+    transform: none;
+  }
+}
