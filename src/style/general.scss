@@ -4,8 +4,7 @@ $secondary-color: #02274A;
 
   max-width: 45em;
   margin: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 15px;
 
   > p, h1, h2, h3, h4, h5 {
     text-align: justify;
@@ -14,6 +13,11 @@ $secondary-color: #02274A;
 
 body {
   color: $secondary-color;
+}
+
+.without-sides-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 // Collaborator

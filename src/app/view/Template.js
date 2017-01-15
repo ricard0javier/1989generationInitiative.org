@@ -20,7 +20,7 @@ const styles = {
 */
 const Tiles = ({children}) => {
   return (
-    <div className="container-fluid" style={styles.container}>
+    <div className="container-fluid without-sides-padding" style={styles.container}>
       <Header/>
       {children}
       <FooterContainer/>
