@@ -20,6 +20,27 @@ body {
   padding-right: 0;
 }
 
+// Home
+.highlight-text {
+
+  color: #B19D64;
+  h1, h3 {
+    line-height: 0.5;
+  }
+
+  @media (min-width: 480px) {
+    h1, h3 {
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    h1, h3 {
+      font-size: 24px;
+    }
+  }
+}
+
 // Collaborator
 .collaborator {
   height: 380px

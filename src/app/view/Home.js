@@ -25,9 +25,6 @@ const styles = {
     width: "100%",
     height: "600px",
     padding: "10px"
-  },
-  title: {
-    color: "#B19D64"
   }
 };
 
@@ -55,8 +52,8 @@ const HomeComponent = () => (
     <SubHeaderComponent pageName="HOME"/>
     <div style={styles.background}>
       <div><span></span></div>
-      <div style={styles.title}>
-        <h3 className="animated-fade-in">TACKLING POPULISM:</h3>
+      <div className="highlight-text">
+        <h1 className="animated-fade-in">TACKLING POPULISM:</h1>
         <h4 className="animated-fade-in-later">HOPE OVER FEAR</h4>
       </div>
       <div>
