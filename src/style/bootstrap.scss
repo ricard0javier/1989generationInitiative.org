@@ -38,6 +38,16 @@ $font-family-base: 'Titillium Web', sans-serif;
     }
   }
 }
+
+.navbar-default .navbar-toggle {
+
+  border-color: #B19D64;
+
+  .icon-bar {
+    background-color: #B19D64;
+  }
+}
+
 //-------- end of bootstrap --------------
 
 
@@ -54,9 +64,6 @@ $font-family-base: 'Titillium Web', sans-serif;
 //-------- brand design --------------
 
 //-------- end of brand design --------------
-
-
-
 a {
   text-decoration: none;
 
