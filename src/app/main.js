@@ -9,7 +9,7 @@ import EventsComponent from "./view/Events";
 import AboutContainer, {initialiseAbout} from "./controller/container/aboutContainer";
 import EventComponent from "./view/Event";
 import reducer from "./controller/modules/reducer";
-import TemplateContainer from "./controller/container/templateContainer";
+import TilesContainer from "./controller/container/tilesContainer";
 import {handlePageView} from './utils/analytics';
 import {getInstance as initialiseAuth} from "./utils/auth-service";
 import {loggedInAuth, loggedOutAuth} from "./controller/modules/auth";
@@ -29,7 +29,7 @@ initialiseAuth(loginHandler, logoutHandler);
 const Main = () => (
   <Provider store={store}>
     <Router history={browserHistory} onUpdate={handlePageView}>
-      <Route path="/" component={TemplateContainer}>
+      <Route path="/" component={TilesContainer}>
         <IndexRedirect to="/home"/>
         <Route path="home" component={HomeComponent}/>
         <Route path="collaborators" component={CollaboratorsComponent}/>
