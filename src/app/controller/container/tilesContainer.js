@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import Tiles from "../../view/Template";
+import Tiles from "../../view/Tiles";
 
 const mapStateToProps = (state, ownProps) => {
   return {
