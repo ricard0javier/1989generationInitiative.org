@@ -11,7 +11,7 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
     textAlign: 'center',
-    height: "150px"
+    height: "200px"
   },
   background: {
     display: 'flex',
@@ -66,6 +66,13 @@ const HomeComponent = () => (
       </div>
     </div>
 
+    {/* Quotes */}
+    <div className="container">
+      <blockquote className="blockquote-reverse">
+        <p>I don’t know whether the 89ers will come together as a defining political generation, how they will act and - as important - how they will react when “stuff happens”, as stuff will. But one thing is clear: on them will depend the future of our past.</p>
+        <footer><cite title="Timothy Garton Ash">Timothy Garton Ash</cite></footer>
+      </blockquote>
+    </div>
     </div>
 
     {/* Defining icons boxes */}
