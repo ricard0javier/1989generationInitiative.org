@@ -6,9 +6,7 @@ import EditMemberContainer from '../controller/container/editMemberContainer';
 
 const styles = {
   teamContainer: {
-    paddingBottom: "10px",
-    paddingLeft: "10px",
-    paddingRight: "10px"
+    paddingBottom: "10px"
   },
   membersContainer: {
     color: '#B19D64'
@@ -38,7 +36,7 @@ const AboutComponent = ({teams, handleEditMember, isLoggedIn}) => {
         {teams.map(team => {
           let memberReverse = false;
           return (
-            <div key={team.id} style={styles.teamContainer}>
+            <div className="container" key={team.id} style={styles.teamContainer}>
               <h2>{team.name}</h2>
               <div className="container-fluid" style={styles.membersContainer}>
                 <div className="row">
