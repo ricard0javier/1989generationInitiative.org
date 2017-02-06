@@ -31,19 +31,23 @@ const styles = {
 const icons = [
   {
     name: "Policies for People",
-    url: "http://static.1989generationinitiative.org/images/icon_policies.png"
+    url: "http://static.1989generationinitiative.org/images/icon_policies.png",
+    description: "That Europe should have as its core aim the improvement of its citizens’ lives; that this should be the driving force behind its broad directions and policies; and that the premise must transcend political ideology, party affiliation, national boundaries, professional discipline and age."
   },
   {
     name: "Solidarity",
-    url: "http://static.1989generationinitiative.org/images/icon_solidarity.png"
+    url: "http://static.1989generationinitiative.org/images/icon_solidarity.png",
+    description: "Member states must embrace their responsibility as part of something bigger, and defend the rights and prosperity not merely of their own citizens, but of Europeans more broadly. Only this will form the basis of true European solidarity."
   },
   {
     name: "Connectivity",
-    url: "http://static.1989generationinitiative.org/images/icon_connectivity.png"
+    url: "http://static.1989generationinitiative.org/images/icon_connectivity.png",
+    description: "In trade, education, politics, and security, connectivity should be fostered between citizens and governments, bringing out the best of our potential. Whilst Europe might design policies that promote this, these cannot be top-down, nor overbearing."
   },
   {
     name: "Opportunity",
-    url: "http://static.1989generationinitiative.org/images/icon_opportunity.png"
+    url: "http://static.1989generationinitiative.org/images/icon_opportunity.png",
+    description: "The history of Europe is a history of great ideas and innovations. But behind each of these is a great scientist, artist or political thinker. Consistent with the notion of policies for people, is the premise that systems must be created to allow citizens to best fulfil their potential: A Europe of universal opportunity."
   }
 ];
 
@@ -70,14 +74,15 @@ const HomeComponent = () => (
     </div>
 
     {/* Defining icons boxes */}
-    <div className="container-fluid">
+    <div className="container">
       <div className="row">
         {icons.map((icon, index) => (
-          <div key={index} className="col-xs-6 col-sm-3" style={styles.iconBox}>
+          <div key={index} className="col-xs-12 col-sm-6" style={styles.iconBox}>
             <div>
               <img src={icon.url}/>
             </div>
-            <span>{icon.name}</span>
+            <h4>{icon.name}</h4>
+            <p>{icon.description}</p>
           </div>
         ))}
       </div>
