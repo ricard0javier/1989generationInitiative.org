@@ -24,7 +24,9 @@ const Header = () => (
     <Navbar>
       <Navbar.Header>
         <Navbar.Brand>
-          <img src="http://static.1989generationinitiative.org/images/logo_1989initiative.png"/>
+          <a href="//www.1989generationinitiative.org">
+            <img src="http://static.1989generationinitiative.org/images/logo_1989initiative.png"/>
+          </a>
         </Navbar.Brand>
         <Navbar.Toggle/>
       </Navbar.Header>
