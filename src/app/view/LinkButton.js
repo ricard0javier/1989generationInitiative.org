@@ -34,7 +34,7 @@ const LinkButton = ({href, text, faIconClass}) => {
 LinkButton.propTypes = {
   href: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  faIconClass: PropTypes.string.isRequired
+  faIconClass: PropTypes.string
 };
 
 export default LinkButton;
