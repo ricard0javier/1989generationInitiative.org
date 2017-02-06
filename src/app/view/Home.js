@@ -66,11 +66,6 @@ const HomeComponent = () => (
       </div>
     </div>
 
-    {/* Donation */}
-    <div className="text">
-      <h2>Donations</h2>
-      <p>In order to cover the travel costs of experts attending the Conference and to facilitate the general logistics of the event, we are depending on your generosity. We encourage you to consider a donation within your means.</p>
-      <Donate/>
     </div>
 
     {/* Defining icons boxes */}
@@ -87,6 +82,14 @@ const HomeComponent = () => (
         ))}
       </div>
     </div>
+
+    {/* Donation */}
+    <div className="container">
+      <h2>Donations</h2>
+      <p>In order to cover the travel costs of experts attending the Conference and to facilitate the general logistics of the event, we are depending on your generosity. We encourage you to consider a donation within your means.</p>
+      <Donate/>
+    </div>
+
   </div>
 );
 
