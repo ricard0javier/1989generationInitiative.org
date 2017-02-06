@@ -73,6 +73,24 @@ const HomeComponent = () => (
         <footer><cite title="Timothy Garton Ash">Timothy Garton Ash</cite></footer>
       </blockquote>
     </div>
+
+    {/* Tickets */}
+    <div className="container-fluid poweredByEventbrite">
+      <iframe
+        src="//eventbrite.com/tickets-external?eid=31541121343&ref=etckt"
+        frameBorder="0"
+        height="300"
+        width="100%"
+        vSpace="0"
+        hSpace="0"
+        marginHeight="5"
+        marginWidth="5"
+        scrolling="auto"
+        allowTransparency="true"
+        >
+      </iframe>
+      <div className="signature">
+        <a className="powered-by-eb" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a></div>
     </div>
 
     {/* Defining icons boxes */}

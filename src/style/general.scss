@@ -93,3 +93,21 @@ body {
     transform: none;
   }
 }
+
+.poweredByEventbrite {
+  width: 100%;
+  text-align: left;
+
+  .signature {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding: 5px 0 5px;
+    margin: 2px;
+    width: 100%;
+    text-align: center;
+  }
+  a {
+    color: #ADB0B6;
+    text-decoration: none;
+  }
+}
