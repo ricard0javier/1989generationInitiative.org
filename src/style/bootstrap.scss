@@ -7,6 +7,7 @@ $navbar-default-link-color: #B19D64;
 $navbar-default-link-hover-color: #B19D64;
 $navbar-default-link-active-color: #B19D64;
 $font-family-base: 'Titillium Web', sans-serif;
+$grid-float-breakpoint: 992px !default;
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss';
 
 // -------------- bootstrap --------------
