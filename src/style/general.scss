@@ -4,8 +4,7 @@ $secondary-color: #02274A;
 
   max-width: 45em;
   margin: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 15px;
 
   > p, h1, h2, h3, h4, h5 {
     text-align: justify;
@@ -14,6 +13,32 @@ $secondary-color: #02274A;
 
 body {
   color: $secondary-color;
+}
+
+.without-sides-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Home
+.highlight-text {
+
+  color: #B19D64;
+  h1, h3 {
+    line-height: 0.5;
+  }
+
+  @media (min-width: 480px) {
+    h1, h3 {
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    h1, h3 {
+      font-size: 24px;
+    }
+  }
 }
 
 // Collaborator
@@ -49,5 +74,40 @@ body {
 
   @media (min-width: 768px) {
     text-align: right;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.arrow.reverse {
+  @extend .arrow;
+
+  @media (min-width: 768px) {
+    left: 0;
+    right: auto;
+    transform: none;
+  }
+}
+
+.poweredByEventbrite {
+  width: 100%;
+  text-align: left;
+
+  .signature {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding: 5px 0 5px;
+    margin: 2px;
+    width: 100%;
+    text-align: center;
+  }
+  a {
+    color: #ADB0B6;
+    text-decoration: none;
   }
 }

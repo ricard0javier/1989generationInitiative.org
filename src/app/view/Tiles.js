@@ -2,16 +2,12 @@ import React, {PropTypes} from "react";
 import Header from "./Header";
 import FooterContainer from "../controller/container/FooterContainer";
 
+// TODO, check if it can be removed
 const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100%'
-  },
-  main: {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column'
   }
 };
 
@@ -20,7 +16,7 @@ const styles = {
 */
 const Tiles = ({children}) => {
   return (
-    <div className="container-fluid" style={styles.container}>
+    <div className="container-fluid without-sides-padding" style={styles.container}>
       <Header/>
       {children}
       <FooterContainer/>

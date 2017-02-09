@@ -29,6 +29,7 @@ const events = [
   {
     landscape: 'http://static.1989generationinitiative.org/images/landscape_brussels.png',
     title: "Brussels 2016",
+    link: "http://static.1989generationinitiative.org/docs/2016_Declaration.pdf",
     text: [
       'Our second major event, 89ers. Writing the Next Chapter, was held at the European Parliament in Brussels in April 2016.',
       'Co-chaired with MEPs from four major Europeans Parliament parties, the 89ers presented eight finalised policy proposals for reforming the EU, as well as new, reinvigorated, unifying vision for the Union.'
@@ -37,6 +38,7 @@ const events = [
   {
     landscape: 'http://static.1989generationinitiative.org/images/landscape_london.png',
     title: "London 2015",
+    link: "http://facebook.com/events/1362902850410939/",
     text: [
       'The Conference on the Redefinition of the European Mission, our first major event, brought together inspiring leaders and 89ers from all over Europe at LSE in June 2015.',
       'Personalities such as Valery Giscard d\'Estaing, Neil Kinnock and Christopher Pissarides came together with 40 talented Europeans and starting laying out the backbone of our policy proposals for reforming the EU.'
@@ -69,7 +71,7 @@ const EventsComponent = () => (
               ))}
             </div>
             <div className="col-sm-4">
-              <a style={styles.downloadLink} target="_blank" href="#"><i className="fa fa-cloud-download"/></a>
+              <a style={styles.downloadLink} target="_blank" href={event.link}><i className="fa fa-cloud-download"/></a>
             </div>
           </div>
         </div>

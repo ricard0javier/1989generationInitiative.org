@@ -24,6 +24,20 @@ gulp.task('cloneS3BucketContent', done => {
   done();
 });
 
+gulp.task('uploadS3BucketContent', done => {
+
+  const jwt = require('jsonwebtoken');
+  const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3JpY2FyZDBqYXZpZXIuZXUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDU4NzJiMTVjYmY4ZTYzMzI1MDY1OWEwZSIsImF1ZCI6IlIyZ1RBemJKeGh5NnZnVUQxMW51VEhGY3JteGR0VDJOIiwiZXhwIjoxNDg0NTUxODU2LCJpYXQiOjE0ODQ1MTU4NTZ9.-QG6CjCm7OGEqfFdOt9Y-oyJzzwGX9T_o9Py26Ic_fg";
+  const secret = "q-A6zRuth_5qIZGWaECO0I0sbkw3P7Yfnbry-hLlyxBWOwVOJpg0mTDl6Oq1xXOe";
+  jwt.verify(token, secret, function(err, decoded) {
+    console.log("err:");
+    console.log(err);
+    console.log("decoded");
+    console.log(decoded);
+  });
+
+});
+
 /**
  * Delete all the S3 Bucket objects contained on the argv[bucketName] bucket
  */

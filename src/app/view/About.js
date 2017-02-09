@@ -6,14 +6,13 @@ import EditMemberContainer from '../controller/container/editMemberContainer';
 
 const styles = {
   teamContainer: {
-    paddingBottom: "10px",
-    paddingLeft: "10px",
-    paddingRight: "10px"
+    paddingBottom: "10px"
   },
   membersContainer: {
     color: '#B19D64'
   },
   memberImage: {
+    position: 'relative',
     width: '50%',
     height: '100%'
   },
@@ -37,7 +36,7 @@ const AboutComponent = ({teams, handleEditMember, isLoggedIn}) => {
         {teams.map(team => {
           let memberReverse = false;
           return (
-            <div key={team.id} style={styles.teamContainer}>
+            <div className="container" key={team.id} style={styles.teamContainer}>
               <h2>{team.name}</h2>
               <div className="container-fluid" style={styles.membersContainer}>
                 <div className="row">
@@ -53,15 +52,18 @@ const AboutComponent = ({teams, handleEditMember, isLoggedIn}) => {
 
                     let memberStyle = "col-sm-6 member";
                     let memberTextStyle = "member-text";
+                    let arrowStyle = "arrow";
                     if (memberReverse) {
                       memberStyle += " reverse";
                       memberTextStyle += " reverse";
+                      arrowStyle += " reverse";
                     }
                     const id = `team-${team.id}_member-${member.id}`;
                     return (
                       <div id={id} className={memberStyle} key={member.id}>
                         <div style={styles.memberImage}>
                           <Image src={memberImage} responsive/>
+                          <object className={arrowStyle} type="image/svg+xml" data="/arrow.svg"/>
                         </div>
                         <div className={memberTextStyle}>
                           <h4>{member.name}</h4>

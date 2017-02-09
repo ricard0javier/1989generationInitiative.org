@@ -32,7 +32,6 @@ export const getInstance = (loginHandler, logoutHandler) => {
     authInstance = auth(loginHandler, logoutHandler);
 
     const tokenId = localStorage.getItem(__ID_TOKEN_KEY__);
-    console.log(tokenId);
     if (tokenId !== undefined && tokenId !== null) {
       loginHandler(tokenId);
     }

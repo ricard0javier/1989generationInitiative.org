@@ -7,14 +7,17 @@ $navbar-default-link-color: #B19D64;
 $navbar-default-link-hover-color: #B19D64;
 $navbar-default-link-active-color: #B19D64;
 $font-family-base: 'Titillium Web', sans-serif;
+$grid-float-breakpoint: 992px !default;
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss';
 
 // -------------- bootstrap --------------
 .navbar-brand {
   padding: 0 0 0 1em;
-  height: 80px;
   margin-top: -30px;
   margin-right: 10px;
+  img {
+    height: 80px;
+  }
 }
 
 .navbar-nav.navbar-right {
@@ -38,6 +41,16 @@ $font-family-base: 'Titillium Web', sans-serif;
     }
   }
 }
+
+.navbar-default .navbar-toggle {
+
+  border-color: #B19D64;
+
+  .icon-bar {
+    background-color: #B19D64;
+  }
+}
+
 //-------- end of bootstrap --------------
 
 
@@ -54,13 +67,14 @@ $font-family-base: 'Titillium Web', sans-serif;
 //-------- brand design --------------
 
 //-------- end of brand design --------------
-
-
-
 a {
   text-decoration: none;
 
   &:hover {
     color: #5aadbb;
   }
+}
+
+.blockquote-reverse {
+  border-right-color: #B19D64;
 }

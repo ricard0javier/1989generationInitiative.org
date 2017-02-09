@@ -24,7 +24,9 @@ const Header = () => (
     <Navbar>
       <Navbar.Header>
         <Navbar.Brand>
-          <img src="http://static.1989generationinitiative.org/images/logo_1989initiative.png"/>
+          <a href="//www.1989generationinitiative.org">
+            <img src="http://static.1989generationinitiative.org/images/logo_1989initiative.png"/>
+          </a>
         </Navbar.Brand>
         <Navbar.Toggle/>
       </Navbar.Header>
@@ -32,6 +34,7 @@ const Header = () => (
         <Nav>
           <NavLink eventKey="1" to="/home" value="Home"/>
           <NavLink eventKey="2" to="/events" value="Events"/>
+          <NavLink eventKey="2" to="/chapters" value="Chapters"/>
           <NavLink eventKey="3" to="/about" value="Who We Are"/>
           <NavLink eventKey="4" to="/collaborators" value="Collaborators"/>
         </Nav>

@@ -19,7 +19,7 @@ const EventComponent = () => (
 
       <h1>Launch Conference 2017</h1>
       <img className="img-responsive" src="http://static.1989generationinitiative.org/images/landscape_london.png"/>
-      <Donate/>
+
       <h2>Introduction</h2>
       <p>The Conference will address the theme of populism with the aim of understanding its origins and appeal. By observing where traditional ruling elites have failed, we look at ways to supplant the rhetoric of fear and hate, with one of hope. Ultimately, the Conference will offer a unique opportunity for interaction and debate between accomplished professionals, policy makers, scholars, and 89ers - young European citizens coming from all over the continent.</p>
       <p>Guests will be divided into several roundtables, each moderated by the 89ers. The content of the Roundtables has been decided following a pan-European survey of 89ers’ aspirations and concerns. The Initiative has refined and analysed the data, in order to determine the topics and issues of greatest importance, which will  be tackled at the Conference.</p>
@@ -27,6 +27,7 @@ const EventComponent = () => (
 
       <h2>Donations</h2>
       <p>In order to cover the travel costs of experts attending the Conference and to facilitate the general logistics of the event, we are depending on your generosity. We encourage you to consider a donation within your means.</p>
+      <Donate/>
 
       <h2>How to apply</h2>
       <p>Applications have now closed. If you wish to contribute to our policy cycle, we encourage you to join one of our Regional Chapters. They also engage in policy making, continuing the work of the Conference, and also organise events independently.

@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import React from 'react';
 import {render} from 'react-dom';
 
-import Main from './app/Main';
+import Main from './app/main';
 
 import './index.scss';
 
