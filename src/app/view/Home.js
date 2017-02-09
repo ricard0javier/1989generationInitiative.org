@@ -67,30 +67,11 @@ const HomeComponent = () => (
     </div>
 
     {/* Quotes */}
-    <div className="container">
+    <div className="container text">
       <blockquote className="blockquote-reverse">
         <p>I don’t know whether the 89ers will come together as a defining political generation, how they will act and - as important - how they will react when “stuff happens”, as stuff will. But one thing is clear: on them will depend the future of our past.</p>
         <footer><cite title="Timothy Garton Ash">Timothy Garton Ash</cite></footer>
       </blockquote>
-    </div>
-
-    {/* Tickets */}
-    <div className="container-fluid poweredByEventbrite">
-      <iframe
-        src="//eventbrite.com/tickets-external?eid=31541121343&ref=etckt"
-        frameBorder="0"
-        height="300"
-        width="100%"
-        vSpace="0"
-        hSpace="0"
-        marginHeight="5"
-        marginWidth="5"
-        scrolling="auto"
-        allowTransparency="true"
-        >
-      </iframe>
-      <div className="signature">
-        <a className="powered-by-eb" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a></div>
     </div>
 
     {/* Defining icons boxes */}
@@ -102,7 +83,9 @@ const HomeComponent = () => (
               <img src={icon.url}/>
             </div>
             <h4>{icon.name}</h4>
-            <p>{icon.description}</p>
+            <div className="text">
+              <p>{icon.description}</p>
+            </div>
           </div>
         ))}
       </div>
