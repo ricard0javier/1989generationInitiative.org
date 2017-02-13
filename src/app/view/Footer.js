@@ -29,7 +29,7 @@ const styles = {
 const Footer = ({loginText, handleLogin}) => (
   <div>
     <div style={styles.container}>
-      <Header/>
+      <Header isFooter/>
     </div>
     <div className="container-fluid">
       <div className="row" style={styles.containerBottom}>
