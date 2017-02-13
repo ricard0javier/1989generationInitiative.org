@@ -1,4 +1,4 @@
-import React from "react";
+import React, {PropTypes} from "react";
 import {Navbar, Nav} from "react-bootstrap";
 import {NavLink} from "./NavLink";
 
@@ -19,7 +19,7 @@ const styles = {
   }
 };
 
-const Header = () => (
+const Header = ({isFooter}) => (
   <div style={styles.header}>
     <Navbar>
       <Navbar.Header>
@@ -41,6 +41,12 @@ const Header = () => (
         <Nav>
           <li><a target="_blank" href="http://89ers.blogactiv.eu">Blog</a></li>
         </Nav>
+        {isFooter && (
+          <Nav>
+            <li><a target="_blank" href="http://static.1989generationinitiative.org/docs/2016_Press_Kit.pdf">Press Kit</a></li>
+          </Nav>
+        )}
+
         <Nav pullRight>
           <div>
             <ul style={styles.list}>
@@ -55,5 +61,9 @@ const Header = () => (
     </Navbar>
   </div>
 );
+
+Header.propTypes = {
+  isFooter: PropTypes.bool
+};
 
 export default Header;
